@@ -1,0 +1,206 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <!--<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">-->
+    <meta content="width=device-width, initial-scale=1.0, user-scalable=yes" name="viewport">
+    <title>Mike Speight, frontend/UI Developer, On-Line Portfolio</title>
+    <meta name="description " content="This is the on-line portfolio of Mike Speight,
+    Mike is a freelance Frontend/UI Developer and Web Consultant based in Lingfield,
+    Surrey in the South east of England.">
+
+    <link type="image/x-icon" href="assets/images/favicon.ico?" rel="icon">
+
+    <!-- Google webmaster tools meta tag DO NOT REMOVE -->
+    <meta name="google-site-verification" content="DFziy1QnQYQdvfn4rC4yOmOuS1_naBC15bHg29oLLJ8" />
+
+    <link href="css/mike-speight.css" rel="stylesheet" />
+    <link href="css/animate.css" rel="stylesheet" />
+    <link href="css/flexslider.css" rel="stylesheet" />
+    <link href="css/jquery.sidr.light.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="scripts/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="scripts/jquery-ui-1.10.2/jquery-ui-1.10.2.custom.js"></script>
+    <script type="text/javascript" src="scripts/jquery.sidr.js"></script>
+    <script type="text/javascript" src="scripts/jquery.flexslider.js"></script>
+    <script type="text/javascript" src="scripts/underscore-min.js"></script>
+    <script type="text/javascript" src="scripts/modernizr-latest-development.js"></script>
+    <script type="text/javascript" src="scripts/online-portfolio.js"></script>
+
+    <script>$(document).ready(function(){
+        $(window).bind('scroll',function(e){
+            parallaxScroll();});
+        function parallaxScroll(){
+            var scrolledY = $(window).scrollTop();
+            $('.cycled li span').css('background-position','left +'+((scrolledY*.65))+'px');
+            $('#technology-panel').css('background-position','left +'+((scrolledY*.65))+'px');
+        }});
+    </script>
+
+</head>
+<body>
+    <div id="page-wrapper">
+        <div id="top-menu-bar">
+            <nav>
+                <a href="./" class="logo"><span class="first">mike-</span><span class="second">speight</span><span class="third">.co.uk</span></a>
+                <ul class="main-nav">
+                    <li class="menu-item">
+                        <span><a href="index.html">Home</a></span>
+                    </li>
+                    <li class="menu-item">
+                        <span><a href="portfolio.html">Portfolio</a></span>
+                    </li>
+                    <li class="menu-item">
+                        <span><a href="about.html">About</a></span>
+                    </li>
+                    <li class="menu-item">
+                        <span><a href="contact.html">Contact</a></span>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="fixed-menu">
+            <nav>
+                <a href="./" class="logo"><span class="first">mike-</span><span class="second">speight</span><span class="third">.co.uk</span></a>
+                <span id="menu-switch"><a><i class="icon icon-reorder"></i></a></span>
+                <ul class="main-nav">
+                    <li class="menu-item">
+                        <span><a href="index.html">Home</a></span>
+                    </li>
+                    <li class="menu-item">
+                        <span><a href="portfolio.html">Portfolio</a></span>
+                    </li>
+                    <li class="menu-item">
+                        <span><a href="about.html">About</a></span>
+                    </li>
+                    <li class="menu-item">
+                        <span><a href="contact.html">Contact</a></span>
+                    </li>
+                </ul>
+            </nav>
+            <nav id="mobile">
+                <ul class="mobile-nav">
+                    <li class="menu-item">
+                        <span><a href="index.html">Home</a></span>
+                    </li>
+                    <li class="menu-item">
+                        <span><a href="portfolio.html">Portfolio</a></span>
+                    </li>
+                    <li class="menu-item">
+                        <span><a href="about.html">About</a></span>
+                    </li>
+                    <li class="menu-item">
+                        <span><a href="contact.html">Contact</a></span>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div id="hero">
+            <div class="inner">
+                <!--<img src="assets/images/960-560-bw-1.jpg">-->
+                <ul class="cycled">
+                    <li>
+                        <span class="image"></span>
+                        <div>
+                            <h2><i>{</i>Mike Speight's On-line Portfolio<i>}</i></h2>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="image"></span>
+                        <div>
+                            <h2></h2>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="image"></span>
+                        <div>
+                            <h2><i>{</i>Front-end<i>/</i>UI Developer<i>}</i></h2>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="image"></span>
+                        <div>
+                            <h2></h2>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="image"></span>
+                        <div>
+                            <h2><i>{</i>Great Interfaces for Today's web<i>}</i></h2>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="image"></span>
+                        <div>
+                            <h2></h2>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <section id="container">
+            <section id="technologies">
+                <h3>Welcome to my On-line Portfolio</h3>
+                <p>Hi I'm Mike Speight, a freelance, UI/Frontend developer and consultant, with many years experience in developing User Interfaces for some of the largest companies in the UK and some very high volume commercial websites.</p>
+                <p>As you have stopped here the  chances are, either you are looking for me personally, or you are searching for a frontend developer, in either case I guess you would like to see, what I have done in the past and what my capabilities are.</p>
+                <p>Here you will be able to gain an insight into what work I have done over the years and on the portfolio page see examples of my work and the clients I have worked for. I also go into further detail about my role in the projects and the technologies used. </p>
+                <div id="technology-panel">
+                    <div class="inner"></div>
+                    <ul>
+                        <li class="html">
+                            <h4>HTML5</h4>
+                        </li>
+                        <li class="css">
+                            <h4>CSS3</h4>
+                        </li>
+                        <li class="js">
+                            <h4>JavaScript</h4>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section id="social-links">
+                <ul>
+                    <li>
+                        <a href="https://twitter.com/Mike_Speight" class="twitter"><h4>Twitter</h4>
+                        <span><i class="icon-social icon-twitter"></i></span></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/mike.speight.14" class="facebook"><h4>facebook</h4>
+                            <span><i class="icon-social icon-facebook"></i></span></a>
+                    </li>
+                    <li>
+                        <a href="http://www.linkedin.com/profile/view?id=19273800" class="linkedin"><h4>linkedin</h4>
+                            <span><i class="icon-social icon-linkedin"></i></span></a>
+                    </li>
+
+                    <li>
+                        <a href="https://plus.google.com/u/0/+MikeSpeight" class="google-plus"><h4>google plus</h4>
+                            <span><i class="icon-social icon-google-plus"></i></span></a>
+                    </li>
+
+                    <li>
+                        <a href="mailto:info@mike-speight.co.uk?subject=enquiry from portfolio" class="mail"><h4>mail</h4>
+                            <span><i class="icon-social icon-envelope"></i></span></a>
+                    </li>
+                </ul>
+            </section>
+            <footer>
+                <p>Mike Speight's - <span>On-line Portfolio</span> - &copy; 2014 mike-speight.co.uk</p>
+            </footer>
+        </section>
+    </div>
+</body>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-8402917-5', 'mike-speight.co.uk');
+    ga('send', 'pageview');
+
+</script>
+</html>

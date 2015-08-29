@@ -1,0 +1,185 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes" name="viewport">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mike Speight, frontend/UI Developer, On-Line Portfolio</title>
+    <meta name="description " content="This is the on-line portfolio of Mike Speight,
+    Mike is a freelance Frontend/UI Developer and Web Consultant based in Lingfield,
+    Surrey in the South east of England.">
+
+    <link type="image/x-icon" href="assets/images/favicon.ico?" rel="icon">
+
+    <!-- Google webmaster tools meta tag DO NOT REMOVE -->
+    <meta name="google-site-verification" content="DFziy1QnQYQdvfn4rC4yOmOuS1_naBC15bHg29oLLJ8" />
+
+    <link href="css/mike-speight.css" rel="stylesheet" />
+    <link href="css/animate.css" rel="stylesheet" />
+    <link href="css/flexslider.css" rel="stylesheet" />
+    <link href="css/jquery.sidr.light.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="scripts/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="scripts/jquery-ui-1.10.2/jquery-ui-1.10.2.custom.js"></script>
+    <script type="text/javascript" src="scripts/jquery.sidr.js"></script>
+    <script type="text/javascript" src="scripts/jquery.flexslider.js"></script>
+    <script type="text/javascript" src="scripts/underscore-min.js"></script>
+    <script type="text/javascript" src="scripts/modernizr-latest-development.js"></script>
+    <script type="text/javascript" src="scripts/online-portfolio.js"></script>
+
+</head>
+<body>
+<div id="page-wrapper">
+    <div id="top-menu-bar">
+        <nav>
+            <a href="./" class="logo"><span class="first">mike-</span><span class="second">speight</span><span class="third">.co.uk</span></a>
+            <ul class="main-nav">
+                <li class="menu-item">
+                    <span><a href="index.html">Home</a></span>
+                </li>
+                <li class="menu-item">
+                    <span><a href="portfolio.html">Portfolio</a></span>
+                </li>
+                <li class="menu-item">
+                    <span><a href="about.html">About</a></span>
+                </li>
+                <li class="menu-item">
+                    <span><a href="contact.html">Contact</a></span>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div id="fixed-menu">
+        <nav>
+            <a href="./" class="logo"><span class="first">mike-</span><span class="second">speight</span><span class="third">.co.uk</span></a>
+            <span id="menu-switch"><a><i class="icon icon-reorder"></i></a></span>
+            <ul class="main-nav">
+                <li class="menu-item">
+                    <span><a href="index.html">Home</a></span>
+                </li>
+                <li class="menu-item">
+                    <span><a href="portfolio.html">Portfolio</a></span>
+                </li>
+                <li class="menu-item">
+                    <span><a href="about.html">About</a></span>
+                </li>
+                <li class="menu-item">
+                    <span><a href="contact.html">Contact</a></span>
+                </li>
+            </ul>
+        </nav>
+        <nav id="mobile">
+            <ul class="mobile-nav">
+                <li class="menu-item">
+                    <span><a href="index.html">Home</a></span>
+                </li>
+                <li class="menu-item">
+                    <span><a href="portfolio.html">Portfolio</a></span>
+                </li>
+                <li class="menu-item">
+                    <span><a href="about.html">About</a></span>
+                </li>
+                <li class="menu-item">
+                    <span><a href="contact.html">Contact</a></span>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <section id="container">
+        <section id="contactContent">
+            <h3>Get in touch</h3>
+            <p>
+                If after viewing the <a href="portfolio.html">Portfolio page</a> or after reading my work history, previous experience and
+                the services I can offer, you are interested in finding out more about me, finding when I'm next available
+                or would like to get the latest version of my CV. Please fill out the form below, so I have a record of
+                who is interested.
+            </p>
+            <p>All form fields marked with a * are required!</p>
+            <form id="contactForm" name="contact-form" action="form-mail.php" method="post">
+                <fieldset>
+                    <ul>
+                        <li class="form-row">
+                            <label for="first-name" >First name:</label>
+                            <input id="first-name" name="first-name" type="text" placeholder="First name *" value="" required />
+                        </li>
+                        <li class="form-row">
+                            <label for="last-name">Last name:</label>
+                            <input id="last-name" name="last-name" type="text" placeholder="Last Name *" value="" required />
+                        </li>
+                        <li class="form-row">
+                            <label for="company">Company:</label>
+                            <input id="company" name="company" type="text" placeholder="Company Name" value="" />
+                        </li>
+                        <li class="form-row">
+                            <label for="telephone">Telephone:</label>
+                            <input id="telephone" name="telephone" type="tel" placeholder="Telephone Number" value="" />
+                        </li>
+                        <li class="form-row">
+                            <label for="email">Email:</label>
+                            <input type=”email” name="email" id="email" placeholder="Email Address *" value="" required />
+                        </li>
+                        <li class="form-row">
+                            <ul class="checkboxGroup">
+                                <li class="group"><input name="reason" id="downloadCV" type="radio" value="downloadCV" checked /><label for="downloadCV">Download Mike's latest CV</label></li>
+                                <li class="group"><input name="reason" id="consultancy" type="radio" value="consultancy" /><label for="consultancy">Interested in consultancy services</label></li>
+                                <li class="group"><input name="reason" id="availability" type="radio" value="availability"/><label for="availability">Availability for contract work</label></li>
+                                <li class="group"><input name="reason" id="contract" type="radio" value="contract" /><label for="contract">I have a specific contract requirement I would like to discuss</label></li>
+                            </ul>
+                        </li>
+                        <li class="form-row">
+                            <label for="free-text">Additional Information:</label>
+                            <textarea id="free-text" name="free-text" placeholder="Addition Information" value=""></textarea>
+                        </li>
+                        <li class="button-row">
+                            <button type="submit">Submit</button>
+                        </li>
+                    </ul>
+                </fieldset>
+            </form>
+
+        </section>
+        <section id="social-links">
+            <ul>
+                <li>
+                    <a href="https://twitter.com/Mike_Speight" class="twitter"><h4>Twitter</h4>
+                        <span><i class="icon-social icon-twitter"></i></span></a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/mike.speight.14" class="facebook"><h4>facebook</h4>
+                        <span><i class="icon-social icon-facebook"></i></span></a>
+                </li>
+                <li>
+                    <a href="http://www.linkedin.com/profile/view?id=19273800" class="linkedin"><h4>linkedin</h4>
+                        <span><i class="icon-social icon-linkedin"></i></span></a>
+                </li>
+
+                <li>
+                    <a href="https://plus.google.com/u/0/+MikeSpeight" class="google-plus"><h4>google plus</h4>
+                        <span><i class="icon-social icon-google-plus"></i></span></a>
+                </li>
+
+                <li>
+                    <a href="mailto:info@mike-speight.co.uk?subject=enquiry from portfolio" class="mail"><h4>mail</h4>
+                        <span><i class="icon-social icon-envelope"></i></span></a>
+                </li>
+            </ul>
+        </section>
+        <footer>
+            <p>Mike Speight's - <span>On-line Portfolio</span> - &copy; 2014 mike-speight.co.uk</p>
+        </footer>
+    </section>
+</div>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-8402917-5', 'mike-speight.co.uk');
+    ga('send', 'pageview');
+
+</script>
+</body>
+</html>

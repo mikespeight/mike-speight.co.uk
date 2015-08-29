@@ -1,0 +1,19 @@
+{
+  "name": "online-portfolio",
+  "version": "0.0.0",
+  "description": "mike-speight.co.uk",
+  "author": "Mike Speight",
+  "homepage": "http://www.mike-speight.co.uk",
+  "repository": {
+    "type": "svn",
+    "url": "https://xp-dev.com/svn/OnlinePortfolioRepo"
+  },
+  "devDependencies": {
+    "css-parse": "^1.5.3",
+    "grunt": "^0.4.5",
+    "grunt-combine-media-queries": "^1.0.15",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-nodeunit": "^0.4.0",
+    "grunt-contrib-uglify": "^0.4.0"
+  }
+}
