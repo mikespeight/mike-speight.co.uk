@@ -106,7 +106,7 @@ var toggleMenu = function(){
 
 
 $(document).ready(function() {
-	//console.log("running main script");
+	console.log("running main script");
 
     if ($('#examplesList').length > 0){
 
@@ -132,8 +132,9 @@ $(document).ready(function() {
 
     // event handelers
 
-    $('#menu-switch a').click(function(e){
+    $('#menu-switch a').on('clivk touchstart',function(e){
         e.preventDefault();
+        console.log(e);
 
         toggleMenu();
         

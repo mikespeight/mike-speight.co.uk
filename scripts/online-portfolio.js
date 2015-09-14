@@ -43,11 +43,11 @@ var port = Portfolio;
 
 //console.log(window.location.hostname);
 
-if(window.location.hostname === "www.mike-speight.co.uk"){
+if(window.location.hostname == "www.mike-speight.co.uk"){
     var baseURL = "www.mike-speight.co.uk/";
     //console.log(baseURL);
 }
-else if(window.location.hostname === "192.168.1.80:8080"){
+else if(window.location.hostname == "192.168.1.80:8080"){
     var baseURL = "192.168.1.80:8080/mike-speight.co.uk/";
 }
 else {
@@ -126,10 +126,6 @@ $(document).ready(function() {
     });
 
     // event handelers
-
-    /*$('body').on('#page-wrapper', 'touchstart', function(e){
-       console.log("touched");
-    });*/
 
 
     $('body').delegate('button.backBtn', 'click', function(e){
