@@ -15,17 +15,12 @@
 
 "use strict"
 
+//console.log("running");
+
 var Portfolio = Portfolio || {};
 
 Portfolio = {
-    /**
-     * Extends the Tournament object with the specified object
-     * @function
-     * @memberOf Portfolio
-     * @name {String} The namespace the object should be dropped into
-     * @obj {Object} The object
-     */
-
+   
     extend: function( name, obj ) {
         if (this[name] === undefined) {
             this[name] = obj;
@@ -45,19 +40,20 @@ var port = Portfolio;
 
 if(window.location.hostname == "www.mike-speight.co.uk"){
     var baseURL = "www.mike-speight.co.uk/";
-    //console.log(baseURL);
+    console.log("www.mike-speight.co.uk", baseURL);
 }
 else if(window.location.hostname == "192.168.1.80:8080"){
     var baseURL = "192.168.1.80:8080/mike-speight.co.uk/";
+    console.log("192.168.1.80:8080", baseURL);
 }
 else {
     var baseURL = "localhost:8080/mike-speight.co.uk/";
-    //console.log(baseURL);
+    console.log("localhost", baseURL);
 }
 
 
 
-//console.log(baseURL);
+console.log(baseURL);
 
 
 port.data = {};
