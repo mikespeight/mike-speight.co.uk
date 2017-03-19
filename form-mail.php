@@ -173,8 +173,8 @@
                 ?>
                 <h3>Download CV</h3>
                 <div id="download">
-                    <a class="pdf" href="documents/Mike Speight CV 2016-v1.pdf">Latest CV in PDF format</a><br />
-                    <a class="doc" href="documents/Mike Speight CV 2016-v1.docx">Latest CV in Word format</a>
+                    <a class="pdf" href="documents/Mike Speight CV 2017-v1.pdf">Latest CV in PDF format</a><br />
+                    <a class="doc" href="documents/Mike Speight CV 2017-v1.docx">Latest CV in Word format</a>
                 </div>
                 <?php
               }
