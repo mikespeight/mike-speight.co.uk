@@ -774,11 +774,38 @@ li:hover.macmillan .img {
     }
   }
 
+
+
 }
 
 ul {
+
+  .captcha-row {
+
+    #txtCaptchaDiv {
+      padding: 5px 20px;
+      font-family: OpenSans-Light;
+      @include border-radius (5px);
+      @include box-shadow (3px, 0.5);
+      border: 1px solid $lt-gray;
+      background: #fff;
+      font-size: 1.5rem;
+      font-style: italic;
+      text-decoration: line-through;
+      color: #cd0a0a;
+      background: $vlt-orange-bg;
+      display: inline-block;
+    }
+
+    label {
+      margin: 10px 0;
+      display: inline-block;
+    }
+  }
+
   .button-row {
     margin: 20px 0;
+    display: none;
     button {
       @include border-radius (5px);
       @include top-down-grad ($lt-orange-bg, $dk-orange-bg);

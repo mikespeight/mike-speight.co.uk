@@ -64,7 +64,7 @@ var getexampledata = function(){
         type: "GET",
         url: "http://"+baseURL+"data/examples.json",
         dataType: "JSON",
-        async: false, // avoid race conditions
+        async: true, // avoid race conditions
         success: function( data ) {
     
             port.data.examples = data;
@@ -132,11 +132,19 @@ $(document).ready(function() {
 
     // event handelers
 
-    $('#menu-switch a').on('clivk touchstart',function(e){
+    $('#menu-switch a').on('click touchstart',function(e){
         e.preventDefault();
         console.log(e);
 
-        toggleMenu();
+        if(event.handled !== true) {
+
+            // Do your magic here.
+            toggleMenu();
+
+            event.handled = true;
+        } else {
+            return false;
+        }
         
     });
 
