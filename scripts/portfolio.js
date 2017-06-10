@@ -60,7 +60,12 @@ var noExamples;
 
 var getexampledata = function(){
 
-    $.ajax({
+	$.get("/data/examples.json", function( data ) {
+
+		port.data.examples = data;
+
+	});
+    /*$.ajax({
         type: "GET",
         url: "http://"+baseURL+"data/examples.json",
         dataType: "JSON",
@@ -74,7 +79,7 @@ var getexampledata = function(){
     
             console.log( errorThrown );
         }
-    });
+    });*/
 }();
 
 noExamples = port.data.examples.length;
