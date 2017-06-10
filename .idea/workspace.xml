@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2495c60-9255-475c-ba2f-6b5e1a12629f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/js/execute.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/js/fnSidr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/js/helper.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/js/menu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/js/sidr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/js/status.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/examples.js" afterPath="$PROJECT_DIR$/data/examples.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/portfolio.html" afterPath="$PROJECT_DIR$/portfolio.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/online-portfolio.js" afterPath="$PROJECT_DIR$/scripts/online-portfolio.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/portfolio.js" afterPath="$PROJECT_DIR$/scripts/portfolio.js" />
     </list>
     <ignored path="mike-speight.co.uk.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -356,7 +346,7 @@
       <workItem from="1492003884626" duration="596000" />
       <workItem from="1492008277316" duration="1000" />
       <workItem from="1493687395833" duration="10582000" />
-      <workItem from="1497105277553" duration="116000" />
+      <workItem from="1497105277553" duration="183000" />
     </task>
     <task id="LOCAL-00001" summary="updating local portfolio data from live site">
       <created>1442235569781</created>
@@ -393,15 +383,21 @@
       <option name="project" value="LOCAL" />
       <updated>1489946623999</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="latest updates">
+      <created>1497105441181</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1497105441181</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34457000" />
+    <option name="totallyTimeSpent" value="34524000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="205" y="23" width="1663" height="1021" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18093504" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -447,7 +443,8 @@
     <MESSAGE value="updating files and data" />
     <MESSAGE value="Added new CV added Captcha to contact page" />
     <MESSAGE value="updated form mail for new (2017) CV" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated form mail for new (2017) CV" />
+    <MESSAGE value="latest updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="latest updates" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -782,6 +779,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
