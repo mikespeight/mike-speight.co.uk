@@ -60,11 +60,16 @@ var noExamples;
 
 var getexampledata = function(){
 
-    $.ajax({
+	$.get("/data/examples.json", function( data ) {
+
+		port.data.examples = data;
+
+	});
+    /*$.ajax({
         type: "GET",
         url: "http://"+baseURL+"data/examples.json",
         dataType: "JSON",
-        async: false, // avoid race conditions
+        async: true, // avoid race conditions
         success: function( data ) {
     
             port.data.examples = data;
@@ -74,7 +79,7 @@ var getexampledata = function(){
     
             console.log( errorThrown );
         }
-    });
+    });*/
 }();
 
 noExamples = port.data.examples.length;
@@ -106,7 +111,7 @@ var toggleMenu = function(){
 
 
 $(document).ready(function() {
-	//console.log("running main script");
+	console.log("running main script");
 
     if ($('#examplesList').length > 0){
 
@@ -132,10 +137,19 @@ $(document).ready(function() {
 
     // event handelers
 
-    $('#menu-switch a').click(function(e){
+    $('#menu-switch a').on('click touchstart',function(e){
         e.preventDefault();
+        console.log(e);
 
-        toggleMenu();
+        if(event.handled !== true) {
+
+            // Do your magic here.
+            toggleMenu();
+
+            event.handled = true;
+        } else {
+            return false;
+        }
         
     });
 

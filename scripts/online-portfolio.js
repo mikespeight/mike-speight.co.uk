@@ -15,17 +15,11 @@
 
 "use strict"
 
+
 var Portfolio = Portfolio || {};
 
 Portfolio = {
-    /**
-     * Extends the Tournament object with the specified object
-     * @function
-     * @memberOf Portfolio
-     * @name {String} The namespace the object should be dropped into
-     * @obj {Object} The object
-     */
-
+   
     extend: function( name, obj ) {
         if (this[name] === undefined) {
             this[name] = obj;
@@ -43,17 +37,18 @@ var port = Portfolio;
 
 //console.log(window.location.hostname);
 
-if(window.location.hostname === "www.mike-speight.co.uk"){
+/*if(window.location.hostname == "www.mike-speight.co.uk"){
     var baseURL = "www.mike-speight.co.uk/";
-    //console.log(baseURL);
+    console.log("www.mike-speight.co.uk", baseURL);
 }
-else if(window.location.hostname === "192.168.1.80:8080"){
+else if(window.location.hostname == "192.168.1.80:8080"){
     var baseURL = "192.168.1.80:8080/mike-speight.co.uk/";
+    console.log("192.168.1.80:8080", baseURL);
 }
 else {
-    var baseURL = "localhost:8080/mike-speight.co.uk/";
-    //console.log(baseURL);
-}
+    var baseURL = "http://localhost:8080/mike-speight.co.uk/";
+    //console.log("localhost", baseURL);
+}*/
 
 
 
@@ -66,10 +61,22 @@ var noExamples;
 
 var getexampledata = function(){
 
-    $.ajax({
+    $.getJSON("data/examples.json", function( data ) {
+
+		port.data.examples = data;
+
+	});
+
+	/*$.get(baseURL+"data/examples.json", function( data ) {
+
+		port.data.examples = data;
+
+	});*/
+
+    /*$.ajax({
         type: "GET",
         url: "http://"+baseURL+"data/examples.json",
-        dataType: "JSON",
+        dataType: "JSONP",
         async: false, // avoid race conditions
         success: function( data ) {
 
@@ -80,10 +87,15 @@ var getexampledata = function(){
 
             console.log( errorThrown );
         }
-    });
+    });*/
 }();
 
+
 noExamples = port.data.examples.length;
+
+
+
+
 
 var pageInit = function(){
 
@@ -126,10 +138,6 @@ $(document).ready(function() {
     });
 
     // event handelers
-
-    /*$('body').on('#page-wrapper', 'touchstart', function(e){
-       console.log("touched");
-    });*/
 
 
     $('body').delegate('button.backBtn', 'click', function(e){

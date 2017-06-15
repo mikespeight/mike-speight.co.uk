@@ -1,0 +1,123 @@
+/************************************
+*
+* Media queries for iPhone 6 and iPhone 6+
+*
+************************************/
+
+// iPhone 6 Styles
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px)
+and (orientation : landscape)
+and (-webkit-min-device-pixel-ratio : 2) {
+  #page-wrapper {
+    width: 667px;
+  }
+}
+
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 2) {
+
+  #page-wrapper {
+    width: 375px;
+  }
+  #hero {
+    height: 219px;
+    .inner {
+      height: 219px;
+      h2 {
+        font-size: 24px;
+        line-height: 36px;
+      }
+    }
+  }
+  #top-menu-bar {
+    visibility: hidden;
+  }
+  #fixed-menu {
+    nav {
+      #menu-switch {
+        display: block;
+      }
+      .main-nav {
+        display: none;
+      }
+      .mobile-nav {
+        li {
+          a {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
+  #technologies {
+    margin-top: 25px ;
+    h3 {
+      font-size: 18px;
+    }
+    p {
+      margin: 20px;
+    }
+    #technology-panel {
+      height: 715px;
+      ul {
+        li {
+          float: none;
+          margin: 20px auto;
+          height: 210px;
+          background-position: 50% 40px;
+        }
+      }
+    }
+  }
+  #social-links {
+    ul {
+      text-align: center;
+      li {
+        float: none;
+        display: inline-block;
+        width: 100px;
+      }
+    }
+  }
+  #portfolio {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #portfolio-panel {
+    ul {
+      width: 320px;
+    }
+  }
+  footer {
+    height: 100%;
+    p {
+      padding: 0 20px;
+      line-height: 24px;
+    }
+  }
+
+// start of retina display styles
+    @include retina {
+
+    }
+}
+
+// iPhone 6+ Styles
+@media only screen
+and (min-device-width : 414px)
+and (max-device-width : 736px)
+and (orientation : landscape)
+and (-webkit-min-device-pixel-ratio : 3)
+{ }
+
+@media only screen
+and (min-device-width : 414px)
+and (max-device-width : 736px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio : 3)
+{ }
