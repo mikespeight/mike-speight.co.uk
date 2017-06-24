@@ -15,87 +15,15 @@
 
 "use strict"
 
-
-var Portfolio = Portfolio || {};
-
-Portfolio = {
-   
-    extend: function( name, obj ) {
-        if (this[name] === undefined) {
-            this[name] = obj;
-        }
-    }
-};
-window.Portfolio = Portfolio;
-var port = Portfolio;
-
 /**
  *
  * model
  *
  */
 
-//console.log(window.location.hostname);
-
-/*if(window.location.hostname == "www.mike-speight.co.uk"){
-    var baseURL = "www.mike-speight.co.uk/";
-    console.log("www.mike-speight.co.uk", baseURL);
-}
-else if(window.location.hostname == "192.168.1.80:8080"){
-    var baseURL = "192.168.1.80:8080/mike-speight.co.uk/";
-    console.log("192.168.1.80:8080", baseURL);
-}
-else {
-    var baseURL = "http://localhost:8080/mike-speight.co.uk/";
-    //console.log("localhost", baseURL);
-}*/
-
-
-
-//console.log(baseURL);
-
-
-port.data = {};
 var noExamples;
 
-
-var getexampledata = function(){
-
-    $.getJSON("data/examples.json", function( data ) {
-
-		port.data.examples = data;
-
-	});
-
-	/*$.get(baseURL+"data/examples.json", function( data ) {
-
-		port.data.examples = data;
-
-	});*/
-
-    /*$.ajax({
-        type: "GET",
-        url: "http://"+baseURL+"data/examples.json",
-        dataType: "JSONP",
-        async: false, // avoid race conditions
-        success: function( data ) {
-
-            port.data.examples = data;
-
-        },
-        error: function( jqXHR, textStatus, errorThrown ) {
-
-            console.log( errorThrown );
-        }
-    });*/
-}();
-
-
 noExamples = port.data.examples.length;
-
-
-
-
 
 var pageInit = function(){
 
@@ -108,6 +36,22 @@ var pageInit = function(){
 
 $(document).ready(function() {
     //console.log("running main script");
+
+	var menuInit = function(){ //init mobile menu
+        console.log('init mobile menu');
+
+		$('#mobile').hide(); //make sure mobile nav is hidden
+
+		$('html').on( "click", function() {
+			//Hide the menus if visible
+			$('#mobile').hide();
+		});
+
+
+		$('#mobile a').on( "click", function(e) {
+			$("#mobile").slideToggle(500);
+		});
+	}();
 
     if ($('#examplesList').length > 0){
 
@@ -238,25 +182,3 @@ $(document).ready(function() {
 
 });
 
-/*
- $('#infoDiag').dialog(
- { bgiframe: true,
- dialogClass: 'eMailDialog',
- resizable: false,
- height: 645,
- width: 510,
- modal: true,
- draggable: false,
- title: "Rights dept request",
- buttons: [
- {
- text: "Send",
- class: 'leftButton',
- click: function() {
- $( this ).dialog( "close" );
- }
- }
- ]
- }
- );
- */

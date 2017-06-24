@@ -50,6 +50,15 @@ sftp-config.json
 # IntelliJ
 /out/
 
+#node modules
+/node_modules/*.*
+*.node_modules/
+*.node_modules/*.*
+
+/build/*.*
+*.build/
+*.build/*.*
+
 # mpeltonen/sbt-idea plugin
 .idea_modules/
 
@@ -102,3 +111,6 @@ local.properties
 .texlipse
 
 # Created by .ignore support plugin (hsz.mobi)
+/package-lock.json
+.sass-cache/d24c0ddae3db121a4618ab241b183be2dfd0d345/
+node_modules/
