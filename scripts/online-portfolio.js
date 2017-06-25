@@ -21,9 +21,11 @@
  *
  */
 
-var noExamples;
+var noExamples,
+    exampledata;
 
 noExamples = port.data.examples.length;
+exampledata = port.data.examples;
 
 var pageInit = function(){
 
@@ -36,22 +38,6 @@ var pageInit = function(){
 
 $(document).ready(function() {
     //console.log("running main script");
-
-	var menuInit = function(){ //init mobile menu
-        console.log('init mobile menu');
-
-		$('#mobile').hide(); //make sure mobile nav is hidden
-
-		$('html').on( "click", function() {
-			//Hide the menus if visible
-			$('#mobile').hide();
-		});
-
-
-		$('#mobile a').on( "click", function(e) {
-			$("#mobile").slideToggle(500);
-		});
-	}();
 
     if ($('#examplesList').length > 0){
 
@@ -75,11 +61,17 @@ $(document).ready(function() {
         //console.log("No list  to display")
     };
 
-    $('#menu-switch a').sidr({
+    $('#menu-switch').sidr({
       name: 'sidr-main',
       displace: false,
       source: '#mobile'
     });
+
+	$(document).on( "click", function() {
+		//Hide the menus if visible
+		//$('#mobile').hide();
+		$.sidr('close', 'sidr-main');
+	});
 
     // event handelers
 
@@ -109,8 +101,9 @@ $(document).ready(function() {
                 resizable: false,
                 width: 700,
                 modal: true,
-                draggable: false
-            }
+                draggable: false,
+				position: ['center',100]
+			}
         );
 
         return false;

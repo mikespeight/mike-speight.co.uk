@@ -397,7 +397,7 @@ html.os-iPad #fixed-menu nav .logo {
       }
       a.text {
         display: block;
-        height:110px;
+        height:70px;
         background-color: $white;
         font-family: OpenSans-Light;
         color: #333;
@@ -517,6 +517,7 @@ div.ui-widget-content {
     td {
       padding:5px;
       vertical-align: top;
+      color:$white;
     }
     th {
       border-right: 1px solid $dk-orange;
@@ -557,6 +558,26 @@ div#dialogs {
   display: none;
 }
 
+li.ford .img {
+  background: transparent url("../assets/images/ford-bw-thumb.jpg") 0 0 no-repeat;
+}
+li:hover.ford .img {
+  background: transparent url("../assets/images/ford-thumb.jpg") 0 0 no-repeat;
+}
+
+li.telegraph .img {
+  background: transparent url("../assets/images/telegraph-bw-thumb.jpg") 0 0 no-repeat;
+}
+li:hover.telegraph .img {
+  background: transparent url("../assets/images/telegraph-thumb.jpg") 0 0 no-repeat;
+}
+
+li.lbc .img {
+  background: transparent url("../assets/images/lbc-bw-thumb.jpg") 0 0 no-repeat;
+}
+li:hover.lbc .img {
+  background: transparent url("../assets/images/lbc-thumb.jpg") 0 0 no-repeat;
+}
 
 li.bidonthis .img {
   background: transparent url("../assets/images/bidonthis-bw-thumb.jpg") 0 0 no-repeat;
