@@ -114,3 +114,7 @@ local.properties
 /package-lock.json
 .sass-cache/d24c0ddae3db121a4618ab241b183be2dfd0d345/
 .node_modules/
+/projectFilesBackup/
+/node_modules/
+/build/
+/.sass-cache/
