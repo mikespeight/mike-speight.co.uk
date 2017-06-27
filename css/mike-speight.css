@@ -201,69 +201,69 @@ ol, ul {
   color: #ffd956;
 }
 
-/* line 14, scss/_palette.scss */
+/* line 15, scss/_palette.scss */
 .dk-bg {
   color: #333333;
 }
 
-/* line 15, scss/_palette.scss */
+/* line 16, scss/_palette.scss */
 .black {
   color: black;
 }
 
-/* line 16, scss/_palette.scss */
+/* line 17, scss/_palette.scss */
 .white {
   color: white;
 }
 
 /* text colours */
-/* line 19, scss/_palette.scss */
+/* line 20, scss/_palette.scss */
 .dk-orange-txt {
   color: #b78a09;
 }
 
-/* line 20, scss/_palette.scss */
+/* line 21, scss/_palette.scss */
 .blk-txt {
   color: black;
 }
 
-/* line 21, scss/_palette.scss */
+/* line 22, scss/_palette.scss */
 .dk-txt {
   color: #333333;
 }
 
-/* line 22, scss/_palette.scss */
+/* line 23, scss/_palette.scss */
 .mid-txt {
   color: #666666;
 }
 
-/* line 23, scss/_palette.scss */
+/* line 24, scss/_palette.scss */
 .lt-txt {
   color: #999999;
 }
 
-/* line 24, scss/_palette.scss */
+/* line 25, scss/_palette.scss */
 .wht-txt {
   color: white;
 }
 
 /* Grays */
-/* line 27, scss/_palette.scss */
+/* line 28, scss/_palette.scss */
 .lt-gray {
   color: #c6c6c6;
 }
 
-/* line 28, scss/_palette.scss */
+/* line 29, scss/_palette.scss */
 .mid-gray {
   color: #747474;
 }
 
-/* line 29, scss/_palette.scss */
+/* line 30, scss/_palette.scss */
 .dk-gray {
   color: #4b4b4b;
 }
 
-/* line 30, scss/_palette.scss */
+/* line 31, scss/_palette.scss */
 .heavy-gray {
   color: #414141;
 }
@@ -1395,11 +1395,37 @@ li:hover.macmillan .img {
   box-shadow: none;
 }
 
-/* line 801, scss/_layout.scss */
+/* line 804, scss/_layout.scss */
+ul .captcha-row #txtCaptchaDiv {
+  padding: 5px 20px;
+  font-family: OpenSans-Light;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 3px 3px 5px 0px rgba(50, 50, 50, 0.5);
+  -moz-box-shadow: 3px 3px 5px 0px rgba(50, 50, 50, 0.5);
+  box-shadow: 3px 3px 5px 0px rgba(50, 50, 50, 0.5);
+  border: 1px solid #c6c6c6;
+  background: #fff;
+  font-size: 1.5rem;
+  font-style: italic;
+  text-decoration: line-through;
+  color: #cd0a0a;
+  background: #fff0bc;
+  display: inline-block;
+}
+/* line 819, scss/_layout.scss */
+ul .captcha-row label {
+  margin: 10px 0;
+  display: inline-block;
+}
+/* line 825, scss/_layout.scss */
 ul .button-row {
   margin: 20px 0;
 }
-/* line 803, scss/_layout.scss */
+/* line 827, scss/_layout.scss */
 ul .button-row button {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -1435,7 +1461,7 @@ ul .button-row button {
   font-weight: bold;
   cursor: pointer;
 }
-/* line 814, scss/_layout.scss */
+/* line 838, scss/_layout.scss */
 ul .button-row button:hover {
   background: #ffc42f;
   /* Old browsers */
@@ -1456,7 +1482,7 @@ ul .button-row button:hover {
 }
 
 /* success styles */
-/* line 823, scss/_layout.scss */
+/* line 847, scss/_layout.scss */
 #download a {
   font-size: 14px;
   display: inline-block;
@@ -1466,15 +1492,15 @@ ul .button-row button:hover {
   padding-right: 40px;
   margin-bottom: 10px;
 }
-/* line 831, scss/_layout.scss */
+/* line 855, scss/_layout.scss */
 #download a.pdf {
   background: transparent url("../assets/images/PDF-Icon-32.png") 100% 0 no-repeat;
 }
-/* line 834, scss/_layout.scss */
+/* line 858, scss/_layout.scss */
 #download a.doc {
   background: transparent url("../assets/images/Word-2013-Icon-32.png") 100% 0 no-repeat;
 }
-/* line 838, scss/_layout.scss */
+/* line 862, scss/_layout.scss */
 #download a:hover {
   color: #ffc42e;
 }
