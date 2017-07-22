@@ -118,3 +118,5 @@ local.properties
 /node_modules/
 /build/
 /.sass-cache/
+/icudtl.dat
+/nw.pak
