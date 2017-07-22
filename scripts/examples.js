@@ -116,8 +116,8 @@ var getexampledata = function() {
 				],
 				"info":{
 						"date":"Sept 2014 - Dec 2014",
-						"name":"Market.com",
-						"url":"http://www.market.com",
+						"name":"Everything5pounds.com</br>Market.com",
+						"url":"https://www.everything5pounds.com/",
 						"description":"Senior User Interface Developer for this On-line e-commerce site for the owners of Camden Market",
 						"working for":"Born Group",
 						"front end technologies used":"HTML5, CSS3, jQuery, Modernizer.",
