@@ -17,14 +17,14 @@
     =Reset Styles Begin
     
 **************************************************/
-/* line 7, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_reset.scss */
+/* line 7, scss/_reset.scss */
 html {
   margin: 0;
   padding: 0;
   border: 0;
 }
 
-/* line 8, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_reset.scss */
+/* line 8, scss/_reset.scss */
 body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav, section {
   margin: 0;
   padding: 0;
@@ -34,61 +34,61 @@ body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, 
   vertical-align: baseline;
 }
 
-/* line 9, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_reset.scss */
+/* line 9, scss/_reset.scss */
 article, aside, details, figcaption, figure, dialog, footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-/* line 10, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_reset.scss */
+/* line 10, scss/_reset.scss */
 body {
   line-height: 1.5;
   background: white;
 }
 
-/* line 11, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_reset.scss */
+/* line 11, scss/_reset.scss */
 table {
   border-collapse: separate;
   border-spacing: 0;
 }
 
-/* line 12, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_reset.scss */
+/* line 12, scss/_reset.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   float: none !important;
 }
 
-/* line 13, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_reset.scss */
+/* line 13, scss/_reset.scss */
 table, th, td {
   vertical-align: middle;
 }
 
-/* line 14, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_reset.scss */
+/* line 14, scss/_reset.scss */
 blockquote:before, blockquote:after, q:before, q:after {
   content: '';
 }
 
-/* line 15, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_reset.scss */
+/* line 15, scss/_reset.scss */
 blockquote, q {
   quotes: "" "";
 }
 
-/* line 16, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_reset.scss */
+/* line 16, scss/_reset.scss */
 a img {
   border: none;
 }
 
-/* line 17, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_reset.scss */
+/* line 17, scss/_reset.scss */
 :focus {
   outline: 0;
 }
 
-/* line 18, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_reset.scss */
+/* line 18, scss/_reset.scss */
 img.full {
   max-width: 100%;
 }
 
-/* line 19, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_reset.scss */
+/* line 19, scss/_reset.scss */
 ol, ul {
   list-style: none;
 }
@@ -98,74 +98,74 @@ ol, ul {
     =Grid Styles Begin
     
 **************************************************/
-/* line 7, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_grid.scss */
+/* line 7, scss/_grid.scss */
 .row {
   overflow: hidden;
   *overflow: visible;
   *zoom: 1;
 }
 
-/* line 13, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_grid.scss */
+/* line 13, scss/_grid.scss */
 .col {
   float: left;
 }
 
-/* line 14, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_grid.scss */
+/* line 14, scss/_grid.scss */
 .colRight {
   float: right;
 }
 
-/* line 15, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_grid.scss */
+/* line 15, scss/_grid.scss */
 .size1of1 {
   float: none;
 }
 
-/* line 16, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_grid.scss */
+/* line 16, scss/_grid.scss */
 .size1of2 {
   width: 50%;
 }
 
-/* line 17, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_grid.scss */
+/* line 17, scss/_grid.scss */
 .size1of3 {
   width: 33.33333%;
 }
 
-/* line 18, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_grid.scss */
+/* line 18, scss/_grid.scss */
 .size2of3 {
   width: 66.66666%;
 }
 
-/* line 19, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_grid.scss */
+/* line 19, scss/_grid.scss */
 .size1of4 {
   width: 25%;
 }
 
-/* line 20, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_grid.scss */
+/* line 20, scss/_grid.scss */
 .size3of4 {
   width: 75%;
 }
 
-/* line 21, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_grid.scss */
+/* line 21, scss/_grid.scss */
 .size1of5 {
   width: 20%;
 }
 
-/* line 22, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_grid.scss */
+/* line 22, scss/_grid.scss */
 .size2of5 {
   width: 40%;
 }
 
-/* line 23, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_grid.scss */
+/* line 23, scss/_grid.scss */
 .size3of5 {
   width: 60%;
 }
 
-/* line 24, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_grid.scss */
+/* line 24, scss/_grid.scss */
 .size4of5 {
   width: 80%;
 }
 
-/* line 26, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_grid.scss */
+/* line 26, scss/_grid.scss */
 .lastCol {
   float: none;
   width: auto;
@@ -180,90 +180,90 @@ ol, ul {
     
 **************************************************/
 /* brand colors */
-/* line 8, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_palette.scss */
+/* line 8, scss/_palette.scss */
 .dk-orange {
   color: #ffc42e;
 }
 
-/* line 9, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_palette.scss */
+/* line 9, scss/_palette.scss */
 .lt-orange {
   color: #ffd956;
 }
 
 /* background colors */
-/* line 12, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_palette.scss */
+/* line 12, scss/_palette.scss */
 .dk-orange-bg {
   color: #ffc42f;
 }
 
-/* line 13, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_palette.scss */
+/* line 13, scss/_palette.scss */
 .lt-orange-bg {
   color: #ffd956;
 }
 
-/* line 15, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_palette.scss */
+/* line 15, scss/_palette.scss */
 .dk-bg {
   color: #333333;
 }
 
-/* line 16, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_palette.scss */
+/* line 16, scss/_palette.scss */
 .black {
-  color: #000000;
+  color: black;
 }
 
-/* line 17, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_palette.scss */
+/* line 17, scss/_palette.scss */
 .white {
-  color: #ffffff;
+  color: white;
 }
 
 /* text colours */
-/* line 20, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_palette.scss */
+/* line 20, scss/_palette.scss */
 .dk-orange-txt {
   color: #b78a09;
 }
 
-/* line 21, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_palette.scss */
+/* line 21, scss/_palette.scss */
 .blk-txt {
-  color: #000000;
+  color: black;
 }
 
-/* line 22, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_palette.scss */
+/* line 22, scss/_palette.scss */
 .dk-txt {
   color: #333333;
 }
 
-/* line 23, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_palette.scss */
+/* line 23, scss/_palette.scss */
 .mid-txt {
   color: #666666;
 }
 
-/* line 24, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_palette.scss */
+/* line 24, scss/_palette.scss */
 .lt-txt {
   color: #999999;
 }
 
-/* line 25, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_palette.scss */
+/* line 25, scss/_palette.scss */
 .wht-txt {
-  color: #ffffff;
+  color: white;
 }
 
 /* Grays */
-/* line 28, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_palette.scss */
+/* line 28, scss/_palette.scss */
 .lt-gray {
   color: #c6c6c6;
 }
 
-/* line 29, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_palette.scss */
+/* line 29, scss/_palette.scss */
 .mid-gray {
   color: #747474;
 }
 
-/* line 30, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_palette.scss */
+/* line 30, scss/_palette.scss */
 .dk-gray {
   color: #4b4b4b;
 }
 
-/* line 31, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_palette.scss */
+/* line 31, scss/_palette.scss */
 .heavy-gray {
   color: #414141;
 }
@@ -290,111 +290,111 @@ ol, ul {
 }
 
 /*  Font Icon styles */
-/* line 34, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_typography.scss */
+/* line 34, scss/_typography.scss */
 .inner a i {
-  color: #ffffff;
+  color: white;
   font-family: fontawesome;
   font-size: 18px;
   line-height: 24px;
   font-style: normal;
 }
 
-/* line 41, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_typography.scss */
+/* line 41, scss/_typography.scss */
 .inner a:hover i {
   color: #ffc42e;
   font-size: 24px;
 }
 
-/* line 45, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_typography.scss */
+/* line 45, scss/_typography.scss */
 i.icon-social {
   font-family: fontawesome;
   font-size: 24px;
   font-style: normal;
 }
 
-/* line 50, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_typography.scss */
+/* line 50, scss/_typography.scss */
 #menu-switch i {
   font-family: fontawesome;
   font-size: 36px;
   font-style: normal;
 }
 
-/* line 56, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_typography.scss */
+/* line 56, scss/_typography.scss */
 .icon-remove-sign:before {
   content: "\f057";
 }
 
-/* line 59, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_typography.scss */
+/* line 59, scss/_typography.scss */
 .icon-twitter-sign:before {
   content: "\f081";
 }
 
-/* line 62, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_typography.scss */
+/* line 62, scss/_typography.scss */
 .icon-twitter:before {
   content: "\f099";
 }
 
-/* line 65, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_typography.scss */
+/* line 65, scss/_typography.scss */
 .icon-facebook-sign:before {
   content: "\f082";
 }
 
-/* line 68, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_typography.scss */
+/* line 68, scss/_typography.scss */
 .icon-facebook:before {
   content: "\f09a";
 }
 
-/* line 71, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_typography.scss */
+/* line 71, scss/_typography.scss */
 .icon-google-plus-sign:before {
   content: "\f0d4";
 }
 
-/* line 74, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_typography.scss */
+/* line 74, scss/_typography.scss */
 .icon-google-plus:before {
   content: "\f0d5";
 }
 
-/* line 77, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_typography.scss */
+/* line 77, scss/_typography.scss */
 .icon-linkedin-sign:before {
   content: "\f08c";
 }
 
-/* line 80, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_typography.scss */
+/* line 80, scss/_typography.scss */
 .icon-linkedin:before {
   content: "\f0e1";
 }
 
-/* line 83, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_typography.scss */
+/* line 83, scss/_typography.scss */
 .icon-envelope:before {
   content: "\f0e0";
 }
 
-/* line 86, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_typography.scss */
+/* line 86, scss/_typography.scss */
 .icon-external-link:before {
   content: "\f08e";
 }
 
-/* line 89, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_typography.scss */
+/* line 89, scss/_typography.scss */
 .icon-info:before {
   content: "\f129";
 }
 
-/* line 92, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_typography.scss */
+/* line 92, scss/_typography.scss */
 .icon-inspect:before {
   content: "\f002";
 }
 
-/* line 95, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_typography.scss */
+/* line 95, scss/_typography.scss */
 .icon-reorder:before {
   content: "\f0c9";
 }
 
-/* line 98, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_typography.scss */
+/* line 98, scss/_typography.scss */
 .icon-remove:before {
   content: "\f00d";
 }
 
-/* line 101, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_typography.scss */
+/* line 101, scss/_typography.scss */
 h2 {
   font-family: OpenSans-Light;
   font-size: 44px;
@@ -405,21 +405,21 @@ h2 {
     =Base Styles Begin
     
 **************************************************/
-/* line 7, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_base.scss */
+/* line 7, scss/_base.scss */
 html {
   font-size: 100%;
 }
 
-/* line 11, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_base.scss */
+/* line 11, scss/_base.scss */
 body {
   color: #333;
-  background-color: #ffffff;
+  background-color: white;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 69%;
   /* 11px */
 }
 
-/* line 18, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_base.scss */
+/* line 18, scss/_base.scss */
 .clearfix:after {
   content: ".";
   /* Older browser do not support empty content */
@@ -435,20 +435,19 @@ body {
     =Layout Styles Begin
     
 **************************************************/
-/* line 8, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 8, scss/_layout.scss */
 #page-wrapper {
   width: 100%;
 }
 
-/* line 12, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 12, scss/_layout.scss */
 #top-menu-bar {
   width: 100%;
   background-color: #ffc42f;
   position: relative;
   z-index: 3;
 }
-
-/* line 17, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 17, scss/_layout.scss */
 #top-menu-bar nav {
   width: 100%;
   height: 85px;
@@ -456,8 +455,7 @@ body {
   overflow: hidden;
   position: relative;
 }
-
-/* line 23, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 23, scss/_layout.scss */
 #top-menu-bar nav .logo {
   display: inline-block;
   position: absolute;
@@ -473,43 +471,36 @@ body {
   line-height: 12px;
   text-decoration: none;
 }
-
-/* line 37, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 37, scss/_layout.scss */
 #top-menu-bar nav .logo span {
   display: block;
 }
-
-/* line 40, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 40, scss/_layout.scss */
 #top-menu-bar nav .logo .first {
   letter-spacing: 5px;
 }
-
-/* line 43, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 43, scss/_layout.scss */
 #top-menu-bar nav .logo .second {
   letter-spacing: 1px;
-  color: #ffffff;
+  color: white;
 }
-
-/* line 47, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 47, scss/_layout.scss */
 #top-menu-bar nav .logo .third {
   letter-spacing: 3px;
 }
-
-/* line 51, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 51, scss/_layout.scss */
 #top-menu-bar nav .main-nav {
   position: absolute;
   top: 35px;
   right: 20px;
   list-style: none;
 }
-
-/* line 56, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 56, scss/_layout.scss */
 #top-menu-bar nav .main-nav li {
   display: inline-block;
   margin-left: 20px;
 }
-
-/* line 59, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 59, scss/_layout.scss */
 #top-menu-bar nav .main-nav li a {
   color: #333333;
   font-family: OpenSans-Light;
@@ -520,27 +511,25 @@ body {
   text-align: center;
   text-decoration: none;
 }
-
-/* line 69, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 69, scss/_layout.scss */
 #top-menu-bar nav .main-nav li a:hover {
-  color: #ffffff;
+  color: white;
 }
 
-/* line 77, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 77, scss/_layout.scss */
 html.os-iPad #fixed-menu nav .logo {
   border: 2px solid red;
 }
 
-/* line 81, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 81, scss/_layout.scss */
 #fixed-menu {
   width: 100%;
   position: fixed;
   top: 0;
   z-index: 2;
-  background-color: #ffffff;
+  background-color: white;
 }
-
-/* line 87, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 87, scss/_layout.scss */
 #fixed-menu nav {
   width: 100%;
   height: 85px;
@@ -548,8 +537,7 @@ html.os-iPad #fixed-menu nav .logo {
   overflow: hidden;
   position: relative;
 }
-
-/* line 93, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 93, scss/_layout.scss */
 #fixed-menu nav .logo {
   display: inline-block;
   position: absolute;
@@ -565,29 +553,24 @@ html.os-iPad #fixed-menu nav .logo {
   line-height: 12px;
   text-decoration: none;
 }
-
-/* line 107, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 107, scss/_layout.scss */
 #fixed-menu nav .logo span {
   display: block;
 }
-
-/* line 110, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 110, scss/_layout.scss */
 #fixed-menu nav .logo .first {
   letter-spacing: 5px;
 }
-
-/* line 113, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 113, scss/_layout.scss */
 #fixed-menu nav .logo .second {
   letter-spacing: 1px;
   color: #ffc42e;
 }
-
-/* line 117, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 117, scss/_layout.scss */
 #fixed-menu nav .logo .third {
   letter-spacing: 3px;
 }
-
-/* line 121, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 121, scss/_layout.scss */
 #fixed-menu nav #menu-switch {
   position: absolute;
   top: 20px;
@@ -597,32 +580,27 @@ html.os-iPad #fixed-menu nav .logo {
   display: none;
   cursor: pointer;
 }
-
-/* line 129, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 129, scss/_layout.scss */
 #fixed-menu nav #menu-switch i {
   cursor: pointer;
 }
-
-/* line 134, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 134, scss/_layout.scss */
 #fixed-menu nav #menu-switch:hover i {
   color: #ffc42e;
 }
-
-/* line 138, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 138, scss/_layout.scss */
 #fixed-menu nav .main-nav {
   position: absolute;
   top: 35px;
   right: 20px;
   list-style: none;
 }
-
-/* line 143, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 143, scss/_layout.scss */
 #fixed-menu nav .main-nav li {
   display: inline-block;
   margin-left: 20px;
 }
-
-/* line 146, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 146, scss/_layout.scss */
 #fixed-menu nav .main-nav li a {
   color: #333333;
   font-family: OpenSans-Light;
@@ -633,26 +611,22 @@ html.os-iPad #fixed-menu nav .logo {
   text-align: center;
   text-decoration: none;
 }
-
-/* line 156, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 156, scss/_layout.scss */
 #fixed-menu nav .main-nav li a:hover {
   color: #ffc42e;
 }
-
-/* line 161, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 161, scss/_layout.scss */
 #fixed-menu nav .mobile-nav {
   clear: both;
 }
-
-/* line 163, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 163, scss/_layout.scss */
 #fixed-menu nav .mobile-nav li {
   display: block;
   /*margin-left: 20px;*/
   padding: 2px 0 0 20px;
   border-bottom: 1px solid #c6c6c6;
 }
-
-/* line 168, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 168, scss/_layout.scss */
 #fixed-menu nav .mobile-nav li a {
   color: #333333;
   font-family: OpenSans-Light;
@@ -663,29 +637,26 @@ html.os-iPad #fixed-menu nav .logo {
   text-align: center;
   text-decoration: none;
 }
-
-/* line 178, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 178, scss/_layout.scss */
 #fixed-menu nav .mobile-nav li a:hover {
   color: #ffc42e;
 }
-
-/* line 182, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 182, scss/_layout.scss */
 #fixed-menu nav .mobile-nav li:last-child {
   margin-bottom: 2px;
 }
 
-/* line 189, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 189, scss/_layout.scss */
 #mobile {
   display: none;
 }
 
-/* line 193, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 193, scss/_layout.scss */
 #hero {
   width: 100%;
   position: relative;
 }
-
-/* line 196, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 196, scss/_layout.scss */
 #hero .inner {
   margin: 0 auto;
   width: 100%;
@@ -694,12 +665,11 @@ html.os-iPad #fixed-menu nav .logo {
   position: relative;
 }
 
-/* line 204, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 204, scss/_layout.scss */
 .cycled {
   list-style: none;
 }
-
-/* line 206, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 206, scss/_layout.scss */
 .cycled li {
   position: absolute;
   top: 0;
@@ -709,7 +679,7 @@ html.os-iPad #fixed-menu nav .logo {
   overflow: visible;
 }
 
-/* line 216, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 216, scss/_layout.scss */
 .cycled li div h2 {
   color: #FFFFFF;
   text-transform: uppercase;
@@ -719,20 +689,18 @@ html.os-iPad #fixed-menu nav .logo {
   letter-spacing: 2px;
   line-height: 100px;
 }
-
-/* line 224, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 224, scss/_layout.scss */
 .cycled li div h2 i {
   color: #ffc42f;
   font-style: normal;
 }
 
-/* line 230, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 230, scss/_layout.scss */
 #technologies {
   width: 100%;
   margin: 75px auto 0;
 }
-
-/* line 233, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 233, scss/_layout.scss */
 #technologies h3 {
   text-transform: uppercase;
   font-family: OpenSans-Light;
@@ -741,16 +709,14 @@ html.os-iPad #fixed-menu nav .logo {
   font-weight: bold;
   letter-spacing: 2px;
   margin: 20px 0;
-  color: #ffc42e;
 }
-
-/* line 243, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 242, scss/_layout.scss */
 #technologies p {
   margin: 20px 0;
   font-size: 12px;
 }
 
-/* line 249, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 248, scss/_layout.scss */
 #technology-panel {
   position: relative;
   width: 100%;
@@ -759,15 +725,13 @@ html.os-iPad #fixed-menu nav .logo {
   background-size: 100%;
   margin-top: 75px;
 }
-
-/* line 256, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 255, scss/_layout.scss */
 #technology-panel .inner {
   height: 100%;
   background-color: #000;
   opacity: 0.60;
 }
-
-/* line 261, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 260, scss/_layout.scss */
 #technology-panel .inner:after {
   background: transparent url("../assets/images/orange-pattern.png") 0 0 repeat;
   content: " ";
@@ -778,8 +742,7 @@ html.os-iPad #fixed-menu nav .logo {
   left: 0px;
   z-index: 0;
 }
-
-/* line 271, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 270, scss/_layout.scss */
 #technology-panel ul {
   width: 100%;
   height: 100%;
@@ -788,113 +751,97 @@ html.os-iPad #fixed-menu nav .logo {
   top: 0;
   left: 0;
 }
-
-/* line 278, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 277, scss/_layout.scss */
 #technology-panel ul li {
   height: 100%;
   width: 33%;
   float: left;
 }
-
-/* line 282, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 281, scss/_layout.scss */
 #technology-panel ul li h4 {
-  color: #ffffff;
+  color: white;
   font-family: OpenSans-Light;
   font-weight: bold;
   font-size: 24px;
   margin-top: 10px;
 }
-
-/* line 290, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 289, scss/_layout.scss */
 #technology-panel ul li.html {
   background: url("../assets/images/HTML5.png") 50% 50% no-repeat;
 }
-
-/* line 293, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 292, scss/_layout.scss */
 #technology-panel ul li.js {
   background: url("../assets/images/js.png") 50% 50% no-repeat;
 }
-
-/* line 296, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 295, scss/_layout.scss */
 #technology-panel ul li.css {
   background: url("../assets/images/CSS3.png") 50% 50% no-repeat;
 }
 
-/* line 302, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 301, scss/_layout.scss */
 #social-links {
   width: 100%;
   margin: 20px auto;
   text-align: center;
 }
-
-/* line 306, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 305, scss/_layout.scss */
 #social-links ul {
   width: 100%;
   text-align: center;
   overflow: hidden;
 }
-
-/* line 310, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 309, scss/_layout.scss */
 #social-links ul li {
   float: left;
   width: 20%;
 }
-
-/* line 313, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 312, scss/_layout.scss */
 #social-links ul li a {
   text-decoration: none;
   text-transform: uppercase;
   font-family: OpenSans-Light;
   color: #333;
 }
-
-/* line 318, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 317, scss/_layout.scss */
 #social-links ul li a span {
   display: inline-block;
   width: 34px;
   height: 34px;
   background-color: transparent;
 }
-
-/* line 324, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 323, scss/_layout.scss */
 #social-links ul li a h4 {
-  color: #ffffff;
+  color: white;
 }
-
-/* line 330, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 329, scss/_layout.scss */
 #social-links ul li a:hover span i {
   color: #ffc42e;
 }
-
-/* line 334, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 333, scss/_layout.scss */
 #social-links ul li a:hover h4 {
   color: #333333;
 }
 
-/* line 342, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 341, scss/_layout.scss */
 #container {
   text-align: center;
 }
-
-/* line 344, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 343, scss/_layout.scss */
 #container a {
   color: #ffc42e;
   text-decoration: none;
 }
-
-/* line 348, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 347, scss/_layout.scss */
 #container a:hover {
   text-decoration: underline;
 }
-
-/* line 351, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 350, scss/_layout.scss */
 #container footer {
   background-color: #ffc42f;
   height: 60px;
   margin-top: 30px;
 }
-
-/* line 355, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 354, scss/_layout.scss */
 #container footer p {
   line-height: 60px;
   font-family: OpenSans-Light;
@@ -903,178 +850,154 @@ html.os-iPad #fixed-menu nav .logo {
   letter-spacing: 1px;
   font-size: 12px;
 }
-
-/* line 362, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 361, scss/_layout.scss */
 #container footer p span {
-  color: #ffffff;
+  color: white;
   font-size: 14px;
 }
 
 /* Portfolio page styles */
-/* line 372, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 371, scss/_layout.scss */
 #portfolio {
   margin: 0 auto;
   width: 100%;
 }
-
-/* line 376, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 375, scss/_layout.scss */
 #portfolio h2 {
   margin: 20px 0;
 }
-
-/* line 379, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 378, scss/_layout.scss */
 #portfolio p {
   margin: 20px 0;
   font-size: 12px;
 }
 
-/* line 386, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 385, scss/_layout.scss */
 #portfolio-panel ul {
   overflow: hidden;
   width: 960px;
   margin: 20px auto;
 }
-
-/* line 390, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 389, scss/_layout.scss */
 #portfolio-panel ul li {
   float: left;
   width: 320px;
   height: 330px;
 }
-
-/* line 394, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 393, scss/_layout.scss */
 #portfolio-panel ul li .img {
   width: 100%;
   height: 220px;
   background-color: beige;
 }
-
-/* line 399, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 398, scss/_layout.scss */
 #portfolio-panel ul li a.text {
   display: block;
   height: 70px;
-  background-color: #ffffff;
+  background-color: white;
   font-family: OpenSans-Light;
   color: #333;
   text-decoration: none;
   text-transform: uppercase;
   padding-top: 40px;
 }
-
-/* line 408, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 407, scss/_layout.scss */
 #portfolio-panel ul li a.text h3 {
   font-family: OpenSans-Light;
   font-size: 14px;
   text-align: center;
 }
-
-/* line 415, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 414, scss/_layout.scss */
 #portfolio-panel ul li:hover a.text {
   background-color: #ffc42e;
-  color: #ffffff;
+  color: white;
 }
 
-/* line 424, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 423, scss/_layout.scss */
 li div.img .popup {
   display: none;
 }
-
-/* line 427, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 426, scss/_layout.scss */
 li div.img .inner {
   display: none;
   text-align: left;
   padding: 5px;
 }
-
-/* line 431, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 430, scss/_layout.scss */
 li div.img .inner a {
   cursor: pointer;
   display: block;
   width: 25px;
   float: left;
 }
-
-/* line 437, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 436, scss/_layout.scss */
 li div.img .inner a:hover {
   text-decoration: none;
 }
-
-/* line 439, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 438, scss/_layout.scss */
 li div.img .inner a:hover i {
   text-decoration: none;
 }
-
-/* line 443, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 442, scss/_layout.scss */
 li div.img .inner a.inspect {
   float: left;
 }
-
-/* line 446, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 445, scss/_layout.scss */
 li div.img .inner a.info {
   margin-left: 10px;
 }
-
-/* line 449, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 448, scss/_layout.scss */
 li div.img .inner a.visit {
   float: right;
 }
-
-/* line 452, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 451, scss/_layout.scss */
 li div.img .inner i {
   padding: 5px;
 }
-
-/* line 455, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 454, scss/_layout.scss */
 li div.img .inner i.external-link {
   margin-right: 5px;
 }
-
-/* line 461, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 460, scss/_layout.scss */
 li div:hover.img .inner {
   display: block;
   background-color: rgba(0, 0, 0, 0.5);
   height: 100%;
 }
 
-/* line 469, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 468, scss/_layout.scss */
 div.ui-dialog {
   position: relative;
 }
-
-/* line 471, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 470, scss/_layout.scss */
 div.ui-dialog .sliderDiag {
   padding-top: 30px;
 }
-
-/* line 474, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 474, scss/_layout.scss */
 div.ui-dialog.infoDialog, div.ui-dialog.sliderDialog {
   background-color: #333333;
   color: #ffc42e;
 }
-
-/* line 476, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 475, scss/_layout.scss */
 div.ui-dialog.infoDialog .ui-dialog-titlebar, div.ui-dialog.sliderDialog .ui-dialog-titlebar {
   display: none;
 }
-
-/* line 482, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 481, scss/_layout.scss */
 div.ui-dialog.ui-widget-content {
   border: none;
   color: #ffc42e;
 }
-
-/* line 486, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 485, scss/_layout.scss */
 div.ui-dialog .ui-dialog-content {
   overflow: hidden;
 }
 
-/* line 491, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 490, scss/_layout.scss */
 div.ui-widget-content {
-  color: #ffffff;
+  color: white;
   padding: 10px;
 }
-
-/* line 494, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 494, scss/_layout.scss */
 div.ui-widget-content a.closeInfo,
 div.ui-widget-content a.closeSlider {
   color: #ffc42e;
@@ -1087,255 +1010,242 @@ div.ui-widget-content a.closeSlider {
   right: -6px;
   cursor: pointer;
 }
-
-/* line 505, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 504, scss/_layout.scss */
 div.ui-widget-content a.closeInfo i,
 div.ui-widget-content a.closeSlider i {
   font-family: fontawesome;
   font-size: 24px;
   font-style: normal;
 }
-
-/* line 511, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 510, scss/_layout.scss */
 div.ui-widget-content h3 {
   font-weight: bold;
   font-size: 14px;
 }
-
-/* line 515, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 514, scss/_layout.scss */
 div.ui-widget-content table {
   width: 100%;
 }
-
-/* line 517, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 517, scss/_layout.scss */
 div.ui-widget-content table th,
 div.ui-widget-content table td {
   padding: 5px;
   vertical-align: top;
-  color: #ffffff;
+  color: white;
 }
-
-/* line 523, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 522, scss/_layout.scss */
 div.ui-widget-content table th {
   border-right: 1px solid #ffc42e;
   border-bottom: 1px solid #ffc42e;
   width: 30%;
 }
-
-/* line 528, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 527, scss/_layout.scss */
 div.ui-widget-content table td {
   border-bottom: 1px solid #ffc42e;
 }
-
-/* line 530, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 529, scss/_layout.scss */
 div.ui-widget-content table td a {
-  color: #ffffff;
+  color: white;
   text-decoration: none;
 }
-
-/* line 534, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 533, scss/_layout.scss */
 div.ui-widget-content table td a:hover {
   color: #b78a09;
   text-decoration: underline;
 }
-
-/* line 538, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 537, scss/_layout.scss */
 div.ui-widget-content table td ol {
   list-style-type: decimal;
   list-style-position: outside;
   margin-left: 20px;
 }
-
-/* line 542, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 541, scss/_layout.scss */
 div.ui-widget-content table td ol li {
   padding-left: 10px;
 }
-
-/* line 546, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 545, scss/_layout.scss */
 div.ui-widget-content table td span {
   display: inline-block;
 }
-
-/* line 551, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 550, scss/_layout.scss */
 div.ui-widget-content table tr:last-child th, div.ui-widget-content table tr:last-child td {
   border-bottom: none;
 }
 
-/* line 558, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 557, scss/_layout.scss */
 div#dialogs {
   display: none;
 }
 
-/* line 562, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 561, scss/_layout.scss */
 li.ford .img {
   background: transparent url("../assets/images/ford-bw-thumb.jpg") 0 0 no-repeat;
 }
 
-/* line 565, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 564, scss/_layout.scss */
 li:hover.ford .img {
   background: transparent url("../assets/images/ford-thumb.jpg") 0 0 no-repeat;
 }
 
-/* line 569, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 568, scss/_layout.scss */
 li.telegraph .img {
   background: transparent url("../assets/images/telegraph-bw-thumb.jpg") 0 0 no-repeat;
 }
 
-/* line 572, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 571, scss/_layout.scss */
 li:hover.telegraph .img {
   background: transparent url("../assets/images/telegraph-thumb.jpg") 0 0 no-repeat;
 }
 
-/* line 576, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 575, scss/_layout.scss */
 li.lbc .img {
   background: transparent url("../assets/images/lbc-bw-thumb.jpg") 0 0 no-repeat;
 }
 
-/* line 579, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 578, scss/_layout.scss */
 li:hover.lbc .img {
   background: transparent url("../assets/images/lbc-thumb.jpg") 0 0 no-repeat;
 }
 
-/* line 583, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 582, scss/_layout.scss */
 li.bidonthis .img {
   background: transparent url("../assets/images/bidonthis-bw-thumb.jpg") 0 0 no-repeat;
 }
 
-/* line 586, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 585, scss/_layout.scss */
 li:hover.bidonthis .img {
   background: transparent url("../assets/images/bidonthis-thumb.jpg") 0 0 no-repeat;
 }
 
-/* line 590, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 589, scss/_layout.scss */
 li.market .img {
   background: transparent url("../assets/images/market-bw-thumb.jpg") 0 0 no-repeat;
 }
 
-/* line 593, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 592, scss/_layout.scss */
 li:hover.market .img {
   background: transparent url("../assets/images/market-thumb.jpg") 0 0 no-repeat;
 }
 
-/* line 597, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 596, scss/_layout.scss */
 li.Hotels4u .img {
   background: transparent url("../assets/images/Hotels4u-bw-thumb.jpg") 0 0 no-repeat;
 }
 
-/* line 600, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 599, scss/_layout.scss */
 li:hover.Hotels4u .img {
   background: transparent url("../assets/images/Hotels4u-thumb.jpg") 0 0 no-repeat;
 }
 
-/* line 604, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 603, scss/_layout.scss */
 li.pearson .img {
   background: transparent url("../assets/images/pearson-bw-thumb.jpg") 0 0 no-repeat;
 }
 
-/* line 607, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 606, scss/_layout.scss */
 li:hover.pearson .img {
   background: transparent url("../assets/images/pearson-thumb.jpg") 0 0 no-repeat;
 }
 
-/* line 611, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 610, scss/_layout.scss */
 li.loreal .img {
   background: transparent url("../assets/images/loreal-bw-thumb.jpg") 0 0 no-repeat;
 }
 
-/* line 614, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 613, scss/_layout.scss */
 li:hover.loreal .img {
   background: transparent url("../assets/images/loreal-thumb.jpg") 0 0 no-repeat;
 }
 
-/* line 618, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 617, scss/_layout.scss */
 li.sportlabs .img {
   background: transparent url("../assets/images/sportlabs-bw-thumb.jpg") 0 0 no-repeat;
 }
 
-/* line 621, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 620, scss/_layout.scss */
 li:hover.sportlabs .img {
   background: transparent url("../assets/images/sportlabs-thumb.jpg") 0 0 no-repeat;
 }
 
-/* line 625, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 624, scss/_layout.scss */
 li.rafclub .img {
   background: transparent url("../assets/images/raf-club-bw-thumb.jpg") 0 0 no-repeat;
 }
 
-/* line 628, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 627, scss/_layout.scss */
 li:hover.rafclub .img {
   background: transparent url("../assets/images/raf-club-thumb.jpg") 0 0 no-repeat;
 }
 
-/* line 632, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 631, scss/_layout.scss */
 li.thorntons .img {
   background: transparent url("../assets/images/thorntons-bw-thumb.jpg") 0 0 no-repeat;
 }
 
-/* line 635, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 634, scss/_layout.scss */
 li:hover.thorntons .img {
   background: transparent url("../assets/images/thorntons-thumb.jpg") 0 0 no-repeat;
 }
 
-/* line 639, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 638, scss/_layout.scss */
 li.tesco .img {
   background: transparent url("../assets/images/tesco-bw-thumb.jpg") 0 0 no-repeat;
 }
 
-/* line 642, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 641, scss/_layout.scss */
 li:hover.tesco .img {
   background: transparent url("../assets/images/tesco-thumb.jpg") 0 0 no-repeat;
 }
 
-/* line 646, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 645, scss/_layout.scss */
 li.hhGlobal .img {
   background: transparent url("../assets/images/hhglobal-bw-thumb.jpg") 0 0 no-repeat;
 }
 
-/* line 649, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 648, scss/_layout.scss */
 li:hover.hhGlobal .img {
   background: transparent url("../assets/images/hhglobal-thumb.jpg") 0 0 no-repeat;
 }
 
-/* line 653, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 652, scss/_layout.scss */
 li.asos .img {
   background: transparent url("../assets/images/asos-bw-thumb.jpg") 0 0 no-repeat;
 }
 
-/* line 656, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 655, scss/_layout.scss */
 li:hover.asos .img {
   background: transparent url("../assets/images/asos-thumb.jpg") 0 0 no-repeat;
 }
 
-/* line 660, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 659, scss/_layout.scss */
 li.mwmw .img {
   background: transparent url("../assets/images/mwmw-bw-thumb.jpg") 0 0 no-repeat;
 }
 
-/* line 663, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 662, scss/_layout.scss */
 li:hover.mwmw .img {
   background: transparent url("../assets/images/mwmw-thumb.jpg") 0 0 no-repeat;
 }
 
-/* line 667, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 666, scss/_layout.scss */
 li.macmillan .img {
   background: transparent url("../assets/images/macmillan-bw-thumb.jpg") 0 0 no-repeat;
 }
 
-/* line 670, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 669, scss/_layout.scss */
 li:hover.macmillan .img {
   background: transparent url("../assets/images/macmillan-thumb.jpg") 0 0 no-repeat;
 }
 
 /* About page styles */
-/* line 676, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 675, scss/_layout.scss */
 #aboutContent {
   text-align: left;
   width: 100%;
   margin: 75px auto 0;
   padding: 0 20px;
 }
-
-/* line 681, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 680, scss/_layout.scss */
 #aboutContent h3 {
   text-transform: uppercase;
   font-family: OpenSans-Light;
@@ -1346,26 +1256,22 @@ li:hover.macmillan .img {
   text-align: left;
   margin: 20px 0;
 }
-
-/* line 691, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 690, scss/_layout.scss */
 #aboutContent h4 {
   font-size: 18px;
 }
-
-/* line 694, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 693, scss/_layout.scss */
 #aboutContent h5 {
   font-size: 14px;
   font-weight: bold;
   margin-bottom: -15px;
 }
-
-/* line 699, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 698, scss/_layout.scss */
 #aboutContent p {
   margin: 20px 0;
   font-size: 12px;
 }
-
-/* line 703, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 702, scss/_layout.scss */
 #aboutContent .two-col {
   -moz-column-count: 2;
   -moz-column-gap: 20px;
@@ -1374,14 +1280,13 @@ li:hover.macmillan .img {
 }
 
 /* Contact page styles */
-/* line 712, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 711, scss/_layout.scss */
 #contactContent {
   text-align: left;
   width: 100%;
   margin: 75px auto 0;
 }
-
-/* line 716, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 715, scss/_layout.scss */
 #contactContent h3 {
   text-transform: uppercase;
   font-family: OpenSans-Light;
@@ -1393,29 +1298,25 @@ li:hover.macmillan .img {
   margin: 20px 0;
   padding: 0 20px;
 }
-
-/* line 727, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 726, scss/_layout.scss */
 #contactContent h4 {
   font-size: 18px;
   padding: 0 20px;
 }
-
-/* line 731, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 730, scss/_layout.scss */
 #contactContent h5 {
   font-size: 14px;
   font-weight: bold;
   margin-bottom: -15px;
   padding: 0 20px;
 }
-
-/* line 737, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 736, scss/_layout.scss */
 #contactContent p {
   margin: 20px 0;
   font-size: 12px;
   padding: 0 20px;
 }
-
-/* line 742, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 741, scss/_layout.scss */
 #contactContent .two-col {
   -moz-column-count: 2;
   -moz-column-gap: 20px;
@@ -1424,25 +1325,22 @@ li:hover.macmillan .img {
   padding: 0 20px;
 }
 
-/* line 751, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 750, scss/_layout.scss */
 #contactForm {
   padding: 0 20px;
 }
-
-/* line 753, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 752, scss/_layout.scss */
 #contactForm .form-row {
   margin: 20px 0;
   clear: left;
   width: 100%;
 }
-
-/* line 757, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 756, scss/_layout.scss */
 #contactForm .form-row label {
   display: none;
   padding: 3px 0;
 }
-
-/* line 761, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 760, scss/_layout.scss */
 #contactForm .form-row input {
   padding: 5px;
   font-family: OpenSans-Light;
@@ -1458,8 +1356,7 @@ li:hover.macmillan .img {
   width: 75%;
   border: 1px solid #c6c6c6;
 }
-
-/* line 770, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 769, scss/_layout.scss */
 #contactForm .form-row textarea {
   padding: 5px;
   font-family: OpenSans-Light;
@@ -1475,34 +1372,30 @@ li:hover.macmillan .img {
   width: 75%;
   border: 1px solid #c6c6c6;
 }
-
-/* line 779, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 778, scss/_layout.scss */
 #contactForm .form-row ul.checkboxGroup {
   clear: left;
   overflow: hidden;
   width: 75%;
 }
-
-/* line 783, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 782, scss/_layout.scss */
 #contactForm .form-row ul.checkboxGroup li {
   width: 50%;
   float: left;
 }
-
-/* line 786, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 785, scss/_layout.scss */
 #contactForm .form-row ul.checkboxGroup li label {
   display: inline-block;
   width: 75%;
 }
-
-/* line 790, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 789, scss/_layout.scss */
 #contactForm .form-row ul.checkboxGroup li input[type="radio"] {
   width: auto;
   margin-right: 10px;
   box-shadow: none;
 }
 
-/* line 805, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 804, scss/_layout.scss */
 ul .captcha-row #txtCaptchaDiv {
   padding: 5px 20px;
   font-family: OpenSans-Light;
@@ -1523,19 +1416,16 @@ ul .captcha-row #txtCaptchaDiv {
   background: #fff0bc;
   display: inline-block;
 }
-
-/* line 820, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 819, scss/_layout.scss */
 ul .captcha-row label {
   margin: 10px 0;
   display: inline-block;
 }
-
-/* line 826, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 825, scss/_layout.scss */
 ul .button-row {
   margin: 20px 0;
 }
-
-/* line 828, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 827, scss/_layout.scss */
 ul .button-row button {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -1556,7 +1446,7 @@ ul .button-row button {
   /* IE10+ */
   background: linear-gradient(to bottom, #ffd956 0%, #ffc42f 100%);
   /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$start', endColorstr='$end',GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$start', endColorstr='$end',GradientType=0 );
   /* IE6-9 */
   -webkit-box-shadow: 3px 3px 5px 0px rgba(50, 50, 50, 0.5);
   -moz-box-shadow: 3px 3px 5px 0px rgba(50, 50, 50, 0.5);
@@ -1567,12 +1457,11 @@ ul .button-row button {
   border-bottom: 1px solid #ffc42f;
   text-shadow: 1px 1px 1px #747474;
   padding: 10px;
-  color: #ffffff;
+  color: white;
   font-weight: bold;
   cursor: pointer;
 }
-
-/* line 839, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 838, scss/_layout.scss */
 ul .button-row button:hover {
   background: #ffc42f;
   /* Old browsers */
@@ -1588,12 +1477,12 @@ ul .button-row button:hover {
   /* IE10+ */
   background: linear-gradient(to bottom, #ffc42f 0%, #ffd956 100%);
   /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$start', endColorstr='$end',GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$start', endColorstr='$end',GradientType=0 );
   /* IE6-9 */
 }
 
 /* success styles */
-/* line 848, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 847, scss/_layout.scss */
 #download a {
   font-size: 14px;
   display: inline-block;
@@ -1603,18 +1492,15 @@ ul .button-row button:hover {
   padding-right: 40px;
   margin-bottom: 10px;
 }
-
-/* line 856, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 855, scss/_layout.scss */
 #download a.pdf {
   background: transparent url("../assets/images/PDF-Icon-32.png") 100% 0 no-repeat;
 }
-
-/* line 859, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 858, scss/_layout.scss */
 #download a.doc {
   background: transparent url("../assets/images/Word-2013-Icon-32.png") 100% 0 no-repeat;
 }
-
-/* line 863, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_layout.scss */
+/* line 862, scss/_layout.scss */
 #download a:hover {
   color: #ffc42e;
 }
@@ -1624,164 +1510,159 @@ ul .button-row button:hover {
 *  Initiate media queries
 *
 **/
-/* line 185, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_media-queries.scss */
+/* line 170, scss/_media-queries.scss */
 #page-wrapper {
-  /* @include iPhone6-portrait-only {
+ /* @include iPhone6-portrait-only {
     width: $mq-iPhone-6-portrait;
 
     }*/
 }
-
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-  /* line 185, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_media-queries.scss */
+  /* line 170, scss/_media-queries.scss */
   #page-wrapper {
     width: 1024px;
   }
 }
-
 @media only screen and (max-width: 1024px) {
-  /* line 196, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_media-queries.scss */
+  /* line 181, scss/_media-queries.scss */
   #page-wrapper #portfolio-panel ul li a.text {
     background-color: #ffc42e !important;
-    color: #ffffff !important;
+    color: white !important;
     height: 68px;
   }
-  /* line 208, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_media-queries.scss */
+  /* line 193, scss/_media-queries.scss */
   #page-wrapper li div.inner {
     display: block;
     height: 12%;
     background-color: rgba(0, 0, 0, 0.5);
   }
-  /* line 216, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_media-queries.scss */
+  /* line 201, scss/_media-queries.scss */
   #page-wrapper li.ford .img {
     background: transparent url("../assets/images/ford-thumb.jpg") 0 0 no-repeat;
   }
-  /* line 220, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_media-queries.scss */
+  /* line 205, scss/_media-queries.scss */
   #page-wrapper li.telegraph .img {
     background: transparent url("../assets/images/telegraph-thumb.jpg") 0 0 no-repeat;
   }
-  /* line 224, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_media-queries.scss */
+  /* line 209, scss/_media-queries.scss */
   #page-wrapper li.lbc .img {
     background: transparent url("../assets/images/lbc-thumb.jpg") 0 0 no-repeat;
   }
-  /* line 228, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_media-queries.scss */
+  /* line 213, scss/_media-queries.scss */
   #page-wrapper li.bidonthis .img {
     background: transparent url("../assets/images/bidonthis-thumb.jpg") 0 0 no-repeat;
   }
-  /* line 232, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_media-queries.scss */
+  /* line 217, scss/_media-queries.scss */
   #page-wrapper li.market .img {
     background: transparent url("../assets/images/market-thumb.jpg") 0 0 no-repeat;
   }
-  /* line 236, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_media-queries.scss */
+  /* line 221, scss/_media-queries.scss */
   #page-wrapper li.Hotels4u .img {
     background: transparent url("../assets/images/Hotels4u-thumb.jpg") 0 0 no-repeat;
   }
-  /* line 240, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_media-queries.scss */
+  /* line 225, scss/_media-queries.scss */
   #page-wrapper li.pearson .img {
     background: transparent url("../assets/images/pearson-thumb.jpg") 0 0 no-repeat;
   }
-  /* line 244, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_media-queries.scss */
+  /* line 229, scss/_media-queries.scss */
   #page-wrapper li.loreal .img {
     background: transparent url("../assets/images/loreal-thumb.jpg") 0 0 no-repeat;
   }
-  /* line 248, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_media-queries.scss */
+  /* line 233, scss/_media-queries.scss */
   #page-wrapper li.sportlabs .img {
     background: transparent url("../assets/images/sportlabs-thumb.jpg") 0 0 no-repeat;
   }
-  /* line 252, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_media-queries.scss */
+  /* line 237, scss/_media-queries.scss */
   #page-wrapper li.rafclub .img {
     background: transparent url("../assets/images/raf-club-thumb.jpg") 0 0 no-repeat;
   }
-  /* line 256, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_media-queries.scss */
+  /* line 241, scss/_media-queries.scss */
   #page-wrapper li.thorntons .img {
     background: transparent url("../assets/images/thorntons-thumb.jpg") 0 0 no-repeat;
   }
-  /* line 260, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_media-queries.scss */
+  /* line 245, scss/_media-queries.scss */
   #page-wrapper li.tesco .img {
     background: transparent url("../assets/images/tesco-thumb.jpg") 0 0 no-repeat;
   }
-  /* line 264, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_media-queries.scss */
+  /* line 249, scss/_media-queries.scss */
   #page-wrapper li.hhGlobal .img {
     background: transparent url("../assets/images/hhglobal-thumb.jpg") 0 0 no-repeat;
   }
-  /* line 268, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_media-queries.scss */
+  /* line 253, scss/_media-queries.scss */
   #page-wrapper li.asos .img {
     background: transparent url("../assets/images/asos-thumb.jpg") 0 0 no-repeat;
   }
-  /* line 272, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_media-queries.scss */
+  /* line 257, scss/_media-queries.scss */
   #page-wrapper li.mwmw .img {
     background: transparent url("../assets/images/mwmw-thumb.jpg") 0 0 no-repeat;
   }
-  /* line 276, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_media-queries.scss */
+  /* line 261, scss/_media-queries.scss */
   #page-wrapper li.macmillan .img {
     background: transparent url("../assets/images/macmillan-thumb.jpg") 0 0 no-repeat;
   }
-  /* line 280, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_media-queries.scss */
+  /* line 265, scss/_media-queries.scss */
   #page-wrapper #aboutContent {
     padding: 0 20px;
   }
-  /* line 284, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_media-queries.scss */
+  /* line 271, scss/_media-queries.scss */
   #page-wrapper #portfolio,
   #page-wrapper #aboutContent,
   #page-wrapper #contactContent {
     width: auto;
   }
 }
-
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-  /* line 185, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_media-queries.scss */
+  /* line 170, scss/_media-queries.scss */
   #page-wrapper {
     width: 768px;
   }
-  /* line 294, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_media-queries.scss */
+  /* line 279, scss/_media-queries.scss */
   #page-wrapper #hero {
     height: 448px;
   }
-  /* line 296, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_media-queries.scss */
+  /* line 281, scss/_media-queries.scss */
   #page-wrapper #hero .inner {
     height: 448px;
   }
-  /* line 301, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_media-queries.scss */
+  /* line 286, scss/_media-queries.scss */
   #page-wrapper #portfolio-panel ul {
     width: 640px;
   }
 }
-
 @media only screen and (max-width: 768px) {
-  /* line 309, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_media-queries.scss */
+  /* line 294, scss/_media-queries.scss */
   #page-wrapper #top-menu-bar {
     visibility: hidden;
   }
-  /* line 315, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_media-queries.scss */
+  /* line 300, scss/_media-queries.scss */
   #page-wrapper #fixed-menu nav #menu-switch {
     display: block;
   }
-  /* line 318, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_media-queries.scss */
+  /* line 303, scss/_media-queries.scss */
   #page-wrapper #fixed-menu nav .main-nav {
     display: none;
   }
-  /* line 323, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_media-queries.scss */
+  /* line 308, scss/_media-queries.scss */
   #page-wrapper #fixed-menu nav .mobile-nav li a {
     font-size: 24px;
   }
-  /* line 330, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_media-queries.scss */
+  /* line 315, scss/_media-queries.scss */
   #page-wrapper #contactContent {
     padding: 0 20px;
   }
-  /* line 335, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_media-queries.scss */
+  /* line 320, scss/_media-queries.scss */
   #page-wrapper #aboutContent h3, #page-wrapper #aboutContent h4, #page-wrapper #aboutContent h5 {
     padding: 0 20px;
   }
-  /* line 338, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_media-queries.scss */
+  /* line 323, scss/_media-queries.scss */
   #page-wrapper #aboutContent .two-col {
     -moz-column-count: 1;
     -webkit-column-count: 1;
     padding: 0 20px;
   }
 }
-
 @media only screen and (min-width: 321px) and (max-width: 480px) {
-  /* line 185, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_media-queries.scss */
+  /* line 170, scss/_media-queries.scss */
   #page-wrapper {
     width: 480px;
     /*#hero {
@@ -1795,81 +1676,80 @@ ul .button-row button:hover {
       }
     }*/
   }
-  /* line 361, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_media-queries.scss */
+  /* line 346, scss/_media-queries.scss */
   #page-wrapper #portfolio-panel ul {
     width: 320px;
   }
 }
-
 @media (max-width: 320px) {
-  /* line 185, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_media-queries.scss */
+  /* line 170, scss/_media-queries.scss */
   #page-wrapper {
     width: 320px;
     /*    @include retina {
-      width: 640px;
-      color:red;
-    }*/
+          width: 640px;
+          color:red;
+        }*/
   }
-  /* line 369, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_media-queries.scss */
+  /* line 354, scss/_media-queries.scss */
   #page-wrapper #hero {
     height: 187px;
   }
-  /* line 371, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_media-queries.scss */
+  /* line 356, scss/_media-queries.scss */
   #page-wrapper #hero .inner {
     height: 187px;
   }
-  /* line 373, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_media-queries.scss */
+  /* line 358, scss/_media-queries.scss */
   #page-wrapper #hero .inner h2 {
     font-size: 24px;
     line-height: 36px;
   }
-  /* line 379, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_media-queries.scss */
+  /* line 364, scss/_media-queries.scss */
   #page-wrapper #technologies {
     margin-top: 25px;
   }
-  /* line 381, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_media-queries.scss */
+  /* line 366, scss/_media-queries.scss */
   #page-wrapper #technologies h3 {
     font-size: 18px;
   }
-  /* line 384, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_media-queries.scss */
+  /* line 369, scss/_media-queries.scss */
   #page-wrapper #technologies p {
     margin: 20px;
   }
-  /* line 387, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_media-queries.scss */
+  /* line 372, scss/_media-queries.scss */
   #page-wrapper #technologies #technology-panel {
     height: 715px;
   }
-  /* line 390, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_media-queries.scss */
+  /* line 375, scss/_media-queries.scss */
   #page-wrapper #technologies #technology-panel ul li {
     float: none;
     margin: 20px auto;
     height: 210px;
     background-position: 50% 40px;
   }
-  /* line 400, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_media-queries.scss */
+  /* line 385, scss/_media-queries.scss */
   #page-wrapper #social-links ul {
     text-align: center;
   }
-  /* line 402, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_media-queries.scss */
+  /* line 387, scss/_media-queries.scss */
   #page-wrapper #social-links ul li {
     float: none;
     display: inline-block;
     width: 100px;
   }
-  /* line 409, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_media-queries.scss */
+  /* line 394, scss/_media-queries.scss */
   #page-wrapper #portfolio {
     padding-left: 0;
     padding-right: 0;
   }
-  /* line 414, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_media-queries.scss */
+  /* line 399, scss/_media-queries.scss */
   #page-wrapper #portfolio-panel ul {
     width: 320px;
   }
-  /* line 418, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_media-queries.scss */
+  /* line 403, scss/_media-queries.scss */
   #page-wrapper footer {
     height: 100%;
   }
-  /* line 420, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_media-queries.scss */
+  /* line 405, scss/_media-queries.scss */
   #page-wrapper footer p {
     padding: 0 20px;
     line-height: 24px;
@@ -1879,140 +1759,144 @@ ul .button-row button:hover {
 /* Only iPhone 4 ----------- */
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
   /*  #page-wrapper {
-    width: 320px;
-  }
-  div#hero {
-    .inner {
-      height: 560px;
+      width: 320px;
     }
-  }
-  #top-menu-bar {
-    visibility: hidden;
-  }
-  #fixed-menu {
-    nav {
-      #menu-switch {
-        display: block;
+    div#hero {
+      .inner {
+        height: 560px;
       }
-      .main-nav {
-        display: none;
-      }
-      .mobile-nav {
-        li {
-          a {
-            font-size: 24px;
+    }
+    #top-menu-bar {
+      visibility: hidden;
+    }
+    #fixed-menu {
+      nav {
+        #menu-switch {
+          display: block;
+        }
+        .main-nav {
+          display: none;
+        }
+        .mobile-nav {
+          li {
+            a {
+              font-size: 24px;
+            }
           }
         }
       }
     }
-  }
-  #technologies h3 {
-    font-size: 16px;
-  }
-  .cycled li div h2 {
-    font-size: 24px;
-    line-height: 48px;
-    top:30px;
-  }*/
+    #technologies h3 {
+      font-size: 16px;
+    }
+    .cycled li div h2 {
+      font-size: 24px;
+      line-height: 48px;
+      top:30px;
+    }*/
 }
-
 /************************************
 *
 * Media queries for iPhone 6 and iPhone 6+
 *
 ************************************/
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
-  /* line 13, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_iphone6.scss */
+  /* line 13, scss/_iphone6.scss */
   #page-wrapper {
     width: 667px;
   }
 }
-
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
-  /* line 24, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_iphone6.scss */
+  /* line 24, scss/_iphone6.scss */
   #page-wrapper {
     width: 375px;
   }
-  /* line 27, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_iphone6.scss */
+
+  /* line 27, scss/_iphone6.scss */
   #hero {
     height: 219px;
   }
-  /* line 29, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_iphone6.scss */
+  /* line 29, scss/_iphone6.scss */
   #hero .inner {
     height: 219px;
   }
-  /* line 31, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_iphone6.scss */
+  /* line 31, scss/_iphone6.scss */
   #hero .inner h2 {
     font-size: 24px;
     line-height: 36px;
   }
-  /* line 37, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_iphone6.scss */
+
+  /* line 37, scss/_iphone6.scss */
   #top-menu-bar {
     visibility: hidden;
   }
-  /* line 42, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_iphone6.scss */
+
+  /* line 42, scss/_iphone6.scss */
   #fixed-menu nav #menu-switch {
     display: block;
   }
-  /* line 45, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_iphone6.scss */
+  /* line 45, scss/_iphone6.scss */
   #fixed-menu nav .main-nav {
     display: none;
   }
-  /* line 50, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_iphone6.scss */
+  /* line 50, scss/_iphone6.scss */
   #fixed-menu nav .mobile-nav li a {
     font-size: 24px;
   }
-  /* line 57, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_iphone6.scss */
+
+  /* line 57, scss/_iphone6.scss */
   #technologies {
     margin-top: 25px;
   }
-  /* line 59, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_iphone6.scss */
+  /* line 59, scss/_iphone6.scss */
   #technologies h3 {
     font-size: 18px;
   }
-  /* line 62, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_iphone6.scss */
+  /* line 62, scss/_iphone6.scss */
   #technologies p {
     margin: 20px;
   }
-  /* line 65, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_iphone6.scss */
+  /* line 65, scss/_iphone6.scss */
   #technologies #technology-panel {
     height: 715px;
   }
-  /* line 68, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_iphone6.scss */
+  /* line 68, scss/_iphone6.scss */
   #technologies #technology-panel ul li {
     float: none;
     margin: 20px auto;
     height: 210px;
     background-position: 50% 40px;
   }
-  /* line 78, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_iphone6.scss */
+
+  /* line 78, scss/_iphone6.scss */
   #social-links ul {
     text-align: center;
   }
-  /* line 80, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_iphone6.scss */
+  /* line 80, scss/_iphone6.scss */
   #social-links ul li {
     float: none;
     display: inline-block;
     width: 100px;
   }
-  /* line 87, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_iphone6.scss */
+
+  /* line 87, scss/_iphone6.scss */
   #portfolio {
     padding-left: 0;
     padding-right: 0;
   }
-  /* line 92, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_iphone6.scss */
+
+  /* line 92, scss/_iphone6.scss */
   #portfolio-panel ul {
     width: 320px;
   }
-  /* line 96, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_iphone6.scss */
+
+  /* line 96, scss/_iphone6.scss */
   footer {
     height: 100%;
   }
-  /* line 98, C:/wamp/www/mike-speight.co.uk.v1/css/scss/_iphone6.scss */
+  /* line 98, scss/_iphone6.scss */
   footer p {
     padding: 0 20px;
     line-height: 24px;
   }
 }
-
-/*# sourceMappingURL=../mike-speight.map */

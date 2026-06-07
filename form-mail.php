@@ -5,10 +5,8 @@
     <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
     <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes" name="viewport">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mike Speight, frontend/UI Developer, On-Line Portfolio</title>
-    <meta name="description " content="This is the on-line portfolio of Mike Speight,
-    Mike is a freelance Frontend/UI Developer and Web Consultant based in Lingfield,
-    Surrey in the South east of England.">
+    <title>Contact Mike Speight | Senior IT Consultant & Agile Delivery Professional</title>
+    <meta name="description" content="Contact Mike Speight regarding IT consultancy, Agile delivery, Scrum, UX/UI architecture, SEO, digital strategy and contract or consultancy opportunities.">
 
     <link type="image/x-icon" href="assets/images/favicon.ico?" rel="icon">
 
@@ -29,7 +27,7 @@
     <script type="text/javascript" src="scripts/online-portfolio.js"></script>
 
 </head>
-<body>
+<body class="update">
 
 <div id="page-wrapper">
     <div id="top-menu-bar">
@@ -89,16 +87,25 @@
     </div>
 
     <section id="container">
-        <section id="contactContent">
+        <section class="main" id="contactContent">
             
 
             <?php
+
+           use PHPMailer\PHPMailer\PHPMailer;
+           use PHPMailer\PHPMailer\Exception;
+
+           require 'scripts/PHPMailer/src/Exception.php';
+           require 'scripts/PHPMailer/src/PHPMailer.php';
+           require 'scripts/PHPMailer/src/SMTP.php';
+
+           $config = require __DIR__ . '/private/mail-config.php';
+
             if(isset($_POST['email'])) {
                  
-                // CHANGE THE TWO LINES BELOW
-                $email_to = "info@mike-speight.co.uk";
+               $email_to = "info@mike-speight.co.uk";
                  
-                $email_subject = "On-line portfolio contact form submission";
+                $email_subject = "On-line contact form submission from mike-speight.co.uk";
                  
                  
                 function died($error) {
@@ -107,7 +114,7 @@
                     echo "<p>These errors appear below.</p><br />";
                     echo $error."<br /><br />";
                     echo "<p>Please go back and fix these errors.</p><br />";
-                    echo "<a class='backBtn' href='#'>Back</a>";
+                    echo "<a class='backBtn' href='contact.html'>Back</a>";
                     die();
                 }
                  
@@ -126,7 +133,7 @@
                  
                 $error_message = "";
 
-                $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
+                $email_exp = '/^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/';
 
                 if(!preg_match($email_exp,$email_from)) {
                   $error_message .= 'The Email Address you entered does not appear to be valid.<br />';
@@ -161,44 +168,55 @@
                 $email_message .= "Free text: ".clean_string($comments)."\n";
                  
                  
-            // create email headers
-            $headers = 'From: '.$email_from."\r\n".
-            'Reply-To: '.$email_from."\r\n" .
-            'X-Mailer: PHP/' . phpversion();
-            @mail($email_to, $email_subject, $email_message, $headers);  
+            // create PHPMailer email
+            $mail = new PHPMailer(true);
+
+            try {
+
+                // SMTP configuration
+                $mail->isSMTP();
+                $mail->Host       = 'smtp.hostinger.com';
+                $mail->SMTPAuth   = true;
+                $mail->Username = $config['smtp_user'];
+                $mail->Password = $config['smtp_pass'];
+                $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+                $mail->Port       = 587;
+
+                // Sender & recipient
+                $mail->setFrom('info@mike-speight.co.uk', 'Mike Speight Website');
+                $mail->addAddress('info@mike-speight.co.uk');
+
+                // Reply-to visitor
+                $mail->addReplyTo($email_from, $first_name . ' ' . $last_name);
+
+                // Content
+                $mail->isHTML(false);
+                $mail->Subject = $email_subject;
+                $mail->Body    = $email_message;
+
+                $mail->send();
+
+            } catch (Exception $e) {
+
+                echo "<h3>Mail sending failed</h3>";
+                echo "<p>Mailer Error: {$mail->ErrorInfo}</p>";
+                exit;
+            }
             ?>
 
             <?php 
-              if($reason == "downloadCV"){
-                ?>
-                <h3>Download CV</h3>
-                <div id="download">
-                    <a class="pdf" href="documents/Mike Speight CV 2017-v1.1.pdf">Latest CV in PDF format</a><br />
-                    <a class="doc" href="documents/Mike Speight CV 2017-v1.1.docx">Latest CV in Word format</a>
-                </div>
-                <?php
-              }
-              elseif($reason == "availability"){
-                ?>
-                <h3>availability for contracts</h3>
-                <p>Date when next avsailable for contract work: Imediate</p>
-                <p>Notice period required before I can be available: N/A</p>
-                <!--<p>I will contact you using the details you entered in the contact form, just as soon as I possibly can.</p>-->
-                <?php
-              }
-              elseif($reason == "contract"){
-                ?>
-                <h3>specific contract requirement</h3>
-                <p>I will contact you using the details you entered in the contact form, just as soon as I possibly can.</p>
-                <p></p>
-                <?php
-              }
-              else{
-                ?>
-                <h3>consultancy services</h3>
-                <p>I will contact you using the details you entered in the contact form, just as soon as I possibly can.</p>
-                <p></p>
-                <?php
+              if ($reason == "downloadCV") {
+                  echo "<p>Thank you for your enquiry. I will respond with the latest version of my CV.</p>";
+              } elseif ($reason == "consultancy") {
+                  echo "<p>Thank you for your consultancy enquiry. I will review your message and respond as soon as possible.</p>";
+              } elseif ($reason == "agile") {
+                  echo "<p>Thank you for your enquiry regarding project delivery or Agile support. I will review your message and respond as soon as possible.</p>";
+              } elseif ($reason == "contract") {
+                  echo "<p>Thank you for your contract or freelance enquiry. I will review the details and respond as soon as possible.</p>";
+              } elseif ($reason == "general") {
+                  echo "<p>Thank you for your message. I will respond as soon as possible.</p>";
+              } else {
+                  echo "<p>Thank you for your enquiry. I will respond as soon as possible.</p>";
               }
             ?>
 
@@ -208,7 +226,9 @@
             <!--<p>Thank you for contacting us. We will be in touch with you very soon.</p>-->
             <ul>
               <li class="button-row">
-                <button id="backBtn" class="backBtn"><i class="icon icon-backward"></i>Back</button>
+                <a id="backBtn" class="backBtn" href="contact.html">
+                  <i class="icon icon-backward"></i>Back
+                </a>
               </li>
             </ul>
 
@@ -217,31 +237,33 @@
         <section id="social-links">
             <ul>
                 <li>
-                    <a href="https://twitter.com/Mike_Speight" class="twitter"><h4>Twitter</h4>
+                    <a href="https://twitter.com/Mike_Speight" target="_blank" title="Visit me on Twitter" class="twitter"><h4>Twitter</h4>
                         <span><i class="icon-social icon-twitter"></i></span></a>
                 </li>
+
                 <li>
-                    <a href="https://www.facebook.com/mike.speight.14" class="facebook"><h4>facebook</h4>
+                    <a href="https://www.facebook.com/mike.speight.14" target="_blank" title="Visit me on Facebook" class="facebook"><h4>facebook</h4>
                         <span><i class="icon-social icon-facebook"></i></span></a>
                 </li>
+
                 <li>
-                    <a href="http://www.linkedin.com/profile/view?id=19273800" class="linkedin"><h4>linkedin</h4>
+                    <a href="https://www.linkedin.com/in/mikespeight/" target="_blank" title="Visit me on Linkedin" class="linkedin"><h4>linkedin</h4>
                         <span><i class="icon-social icon-linkedin"></i></span></a>
                 </li>
 
                 <li>
-                    <a href="https://plus.google.com/u/0/+MikeSpeight" class="google-plus"><h4>google plus</h4>
-                        <span><i class="icon-social icon-google-plus"></i></span></a>
+                    <a href="https://www.instagram.com/mikespeight3453/" target="_blank" title="Visit my Instagram profile" class="instagram"><h4>Instagram</h4>
+                        <span><i class="icon-social icon-instagram"></i></span></a>
                 </li>
 
                 <li>
-                    <a href="mailto:info@mike-speight.co.uk?subject=enquiry from portfolio" class="mail"><h4>mail</h4>
+                    <a href="mailto:info@mike-speight.co.uk?subject=enquiry from mike-speight.co.uk website" class="mail"><h4>mail</h4>
                         <span><i class="icon-social icon-envelope"></i></span></a>
                 </li>
             </ul>
         </section>
         <footer>
-            <p>Mike Speight's - <span>On-line Portfolio</span> - &copy; 2014 mike-speight.co.uk</p>
+            <p>Mike Speight - <span>Senior IT Consultant & Digital Delivery Professional</span> - &copy; <span id="copy" style="font-size:100%; color: #333;"></span> mike-speight.co.uk</p>
         </footer>
     </section>
 </div>

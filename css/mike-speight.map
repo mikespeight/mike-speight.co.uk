@@ -1,16 +1,16 @@
 {
 	"version": 3,
-	"file": "scss/mike-speight.css",
+	"file": "../scss/mike-speight.css",
 	"sources": [
-		"scss/mike-speight.scss",
-		"scss/_reset.scss",
-		"scss/_grid.scss",
-		"scss/_palette.scss",
-		"scss/_typography.scss",
-		"scss/_base.scss",
-		"scss/_layout.scss",
-		"scss/_media-queries.scss",
-		"scss/_iphone6.scss"
+		"../scss/mike-speight.scss",
+		"../scss/_reset.scss",
+		"../scss/_grid.scss",
+		"../scss/_palette.scss",
+		"../scss/_typography.scss",
+		"../scss/_base.scss",
+		"../scss/_layout.scss",
+		"../scss/_media-queries.scss",
+		"../scss/_iphone6.scss"
 	],
 	"sourcesContent": [
 		"/*************************************************\r\n\r\n    PLEASE do not make changes directly to the\r\n    mike-speight.css file, as we are using LESS\r\n    as a CSS precompiler and mike-speight.css will\r\n    be overwritten the nex time LESS compiles.\r\n\r\n    Pleas make any edits in the corresponding\r\n    .less file, if you do not understand the\r\n    LESS syntax do not worry as LESS understands\r\n    plain CSS\r\n\r\n**************************************************/\r\n\r\n/* Mixins */\r\n\r\n@mixin border-radius($radius) {\r\n  -webkit-border-radius: $radius;\r\n  -moz-border-radius: $radius;\r\n  -ms-border-radius: $radius;\r\n  -o-border-radius: $radius;\r\n  border-radius: $radius;\r\n}\r\n\r\n@mixin border-radius-top ($radius) {\r\n  border-radius: $radius $radius 0px 0px;\r\n  -moz-border-radius: $radius $radius 0px 0px;\r\n  -webkit-border-radius: $radius $radius 0px 0px;\r\n}\r\n\r\n@mixin grad-border($top, $sides, $bottom) {\r\n  border-top: 1px solid $top;\r\n  border-left: 1px solid $sides;\r\n  border-right: 1px solid $sides;\r\n  border-bottom: 1px solid $bottom;\r\n}\r\n\r\n@mixin box-shadow ($size, $opacity) {\r\n  -webkit-box-shadow: $size $size 5px 0px rgba(50, 50, 50, $opacity);\r\n  -moz-box-shadow:    $size $size 5px 0px rgba(50, 50, 50, $opacity);\r\n  box-shadow:         $size $size 5px 0px rgba(50, 50, 50, $opacity);\r\n}\r\n\r\n@mixin top-down-grad($start, $end) {\r\n  background: $start; /* Old browsers */\r\n  background: -moz-linear-gradient(top,  $start 0%, $end 100%); /* FF3.6+ */\r\n  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$start), color-stop(100%,$end)); /* Chrome,Safari4+ */\r\n  background: -webkit-linear-gradient(top,  $start 0%,$end 100%); /* Chrome10+,Safari5.1+ */\r\n  background: -o-linear-gradient(top,  $start 0%,$end 100%); /* Opera 11.10+ */\r\n  background: -ms-linear-gradient(top,  $start 0%,$end 100%); /* IE10+ */\r\n  background: linear-gradient(to bottom,  $start 0%,$end 100%); /* W3C */\r\n  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$start', endColorstr='$end',GradientType=0 ); /* IE6-9 */\r\n}\r\n\r\n\r\n@import \"reset.scss\", \"grid.scss\", \"palette.scss\", \"typography.scss\", \"base.scss\", \"layout.scss\", \"media-queries.scss\", \"iphone6.scss\"; //\r\n\r\n\r\n",

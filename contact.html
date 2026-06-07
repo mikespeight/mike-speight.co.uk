@@ -1,22 +1,31 @@
 <!doctype html>
 <html>
 <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-T72GG2RK');</script>
+    <!-- End Google Tag Manager -->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
     <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes" name="viewport">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mike Speight, frontend/UI Developer, On-Line Portfolio</title>
-    <meta name="description " content="This is the on-line portfolio of Mike Speight,
-    Mike is a freelance Frontend/UI Developer and Web Consultant based in Lingfield,
-    Surrey in the South east of England.">
+    <title>Contact Mike Speight | Senior IT Consultant & Agile Delivery Professional</title>
+    <meta name="description" content="Contact Mike Speight regarding IT consultancy,
+    Agile delivery, Scrum, UX/UI architecture, SEO, digital strategy and
+    contract or consultancy opportunities.">
 
     <link type="image/x-icon" href="assets/images/favicon.ico?" rel="icon">
 
     <!-- Google webmaster tools meta tag DO NOT REMOVE -->
     <meta name="google-site-verification" content="DFziy1QnQYQdvfn4rC4yOmOuS1_naBC15bHg29oLLJ8" />
 
-    <link href="css/mike-speight.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
     <link href="css/animate.css" rel="stylesheet" />
+    <link href="css/jquery-ui-1.10.4.custom.css" rel="stylesheet" />
+    <link href="css/jQuery-UI-overrides.css" rel="stylesheet" />
     <link href="css/flexslider.css" rel="stylesheet" />
     <link href="css/jquery.sidr.light.css" rel="stylesheet" />
 
@@ -29,8 +38,15 @@
     <script type="text/javascript" src="scripts/examples.js"></script>
     <script type="text/javascript" src="scripts/online-portfolio.js"></script>
 
+    <!--<link rel="stylesheet" href="css/update.css" />-->
+
 </head>
-<body>
+<body class="update">
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T72GG2RK"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 <div id="page-wrapper">
     <div id="top-menu-bar">
         <nav>
@@ -89,14 +105,18 @@
     </div>
 
     <section id="container">
-        <section id="contactContent">
-            <h3>Get in touch</h3>
+        <section class="main" id="contactContent">
+            <h3>Contact Mike Speight</h3>
+
             <p>
-                If after viewing the <a href="portfolio.html">Portfolio page</a> or after reading my work history, previous experience and
-                the services I can offer, you are interested in finding out more about me, finding when I'm next available
-                or would like to get the latest version of my CV. Please fill out the form below, so I have a record of
-                who is interested.
+                If you would like to discuss consultancy opportunities, Agile delivery support, project work, digital strategy, UX/UI consultancy or potential contract engagements, please feel free to get in touch using the contact form below.
             </p>
+
+            <p>
+                I am always happy to discuss new opportunities, collaborative projects and consultancy enquiries.
+            </p>
+
+
             <p>All form fields marked with a * are required!</p>
             <form id="contactForm" name="contact-form" action="form-mail.php" method="post">
                 <fieldset>
@@ -119,27 +139,28 @@
                         </li>
                         <li class="form-row">
                             <label for="email">Email:</label>
-                            <input type=”email” name="email" id="email" placeholder="Email Address *" value="" required />
+                            <input type="email" name="email" id="email" placeholder="Email Address *" value="" required />
                         </li>
                         <li class="form-row">
                             <ul class="checkboxGroup">
                                 <li class="group"><input name="reason" id="downloadCV" type="radio" value="downloadCV" checked /><label for="downloadCV">Download Mike's latest CV</label></li>
-                                <li class="group"><input name="reason" id="consultancy" type="radio" value="consultancy" /><label for="consultancy">Interested in consultancy services</label></li>
-                                <li class="group"><input name="reason" id="availability" type="radio" value="availability"/><label for="availability">Availability for contract work</label></li>
-                                <li class="group"><input name="reason" id="contract" type="radio" value="contract" /><label for="contract">I have a specific contract requirement I would like to discuss</label></li>
+                                <li class="group"><input name="reason" id="consultancy" type="radio" value="consultancy" /><label for="consultancy">Consultancy or advisory enquiry</label></li>
+                                <li class="group"><input name="reason" id="agile" type="radio" value="agile" /><label for="agile">Project delivery or Agile support</label></li>
+                                <li class="group"><input name="reason" id="contract" type="radio" value="contract"/><label for="contract">Contract or freelance opportunity</label></li>
+                                <li class="group"><input name="reason" id="general" type="radio" value="general" /><label for="general">General enquiry</label></li>
                             </ul>
                         </li>
                         <li class="form-row">
                             <label for="free-text">Additional Information:</label>
                             <textarea id="free-text" name="free-text" placeholder="Addition Information" value=""></textarea>
                         </li>
-                        <li class="captcha-row">
+                        <!--<li class="captcha-row">
                             <span id="txtCaptchaDiv"></span><br />
                             <input type="hidden" id="txtCaptcha" />
                             <label for="txtInput">To submit this form, please enter the numbers shown above, in the box below:</label><br />
                             <input type="text" class="disablecopypaste" name="txtInput" id="txtInput" size="15" />
 
-                        </li>
+                        </li>-->
                         <li class="button-row">
                             <button id="submit" type="submit">Submit</button>
                         </li>
@@ -204,31 +225,23 @@
                 </li>
 
                 <li>
-                    <a href="https://plus.google.com/u/0/+MikeSpeight" target="_blank" title="Visit me on Google+" class="google-plus"><h4>google plus</h4>
-                        <span><i class="icon-social icon-google-plus"></i></span></a>
+                    <a href="https://www.instagram.com/mikespeight3453/" target="_blank" title="Visit my Insttagram profile" class="instagram"><h4>Instagram</h4>
+                        <span><i class="icon-social icon-instagram"></i></span></a>
                 </li>
 
                 <li>
-                    <a href="mailto:info@mike-speight.co.uk?subject=enquiry from portfolio" class="mail"><h4>mail</h4>
+                    <a href="mailto:info@mike-speight.co.uk?subject=enquiry from mike-speight.co.uk website" class="mail"><h4>mail</h4>
                         <span><i class="icon-social icon-envelope"></i></span></a>
                 </li>
             </ul>
         </section>
         <footer>
-            <p>Mike Speight's - <span>On-line Portfolio</span> - &copy; 2017 mike-speight.co.uk</p>
+            <p>Mike Speight - <span>Senior IT Consultant & Digital Delivery Professional</span> - &copy; <span id="copy" style="font-size:100%; color: #333;"></span> mike-speight.co.uk</p>
         </footer>
     </section>
 </div>
-<script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    ga('create', 'UA-8402917-5', 'mike-speight.co.uk');
-    ga('send', 'pageview');
 
-</script>
 <script type="text/javascript">
 	$(document).ready(function () {
 		$('input.disablecopypaste').bind('copy paste', function (e) {
