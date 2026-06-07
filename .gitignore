@@ -81,4 +81,8 @@ icudtl.dat
 # Folders to review before deciding whether they belong in repo
 # ------------------------------------------------------------
 # License/
-# LittleLoft/
+
+# ------------------------------------------------------------
+Design files review before deciding whether they belong in repo
+# ------------------------------------------------------------
+*.psd
