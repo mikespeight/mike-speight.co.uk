@@ -86,3 +86,26 @@ icudtl.dat
 Design files review before deciding whether they belong in repo
 # ------------------------------------------------------------
 *.psd
+
+# ------------------------------------------------------------
+# Historical projects and Experimental files
+# ------------------------------------------------------------
+License/
+LittleLoft/
+VSTS/
+bot/
+chorus/
+designers/
+h4u/
+
+# Legacy backups
+portfolio.v1.html
+data/about.html
+data/index.html
+data/portfolio.html
+data/examples_orig.json
+
+documents/contact.html
+documents/portfolio.html
+documents/online-portfolio.js
+documents/*.htm
