@@ -13,7 +13,7 @@
  *
  */
 
-"use strict"
+"use strict";
 
 /**
  *
@@ -21,51 +21,20 @@
  *
  */
 
-var noExamples,
-    exampledata;
-
-noExamples = port.data.examples.length;
-exampledata = port.data.examples;
-
-var pageInit = function(){
-
-
-
-}();
-
-
-
-
 $(document).ready(function() {
-    //console.log("running main script");
 
-    if ($('#examplesList').length > 0){
+	var $body = $('body'),
+		$copy = $('#copy');
 
-        for (var count = 0; count < noExamples; count++) {
+	var copyDate = new Date();
 
-            var thisObj = port.data.examples[count];
+	$copy.html(copyDate.getFullYear());
 
-            // Underscore Template
-            // Get the template's markup...
-            var tmplMarkup = $('#template-example').html();
-
-            // ...tell Underscore to render the template...
-            var compiledTmpl = _.template(tmplMarkup, { exampledata : thisObj });
-
-            // ...and update part of your page:
-            $('#examplesList').append(compiledTmpl);
-
-        };
-    }
-    else {
-        //console.log("No list  to display")
-    };
-
-    $('#menu-switch').sidr({
-      name: 'sidr-main',
-      displace: false,
-      source: '#mobile'
-    });
+	$('#menu-switch').sidr({
+		name: 'sidr-main',
+		displace: false,
+		source: '#mobile'
+	});
 
 	$(document).on( "click", function() {
 		//Hide the menus if visible
@@ -73,105 +42,154 @@ $(document).ready(function() {
 		$.sidr('close', 'sidr-main');
 	});
 
-    // event handelers
+	// event handelers
 
 
-    $('body').delegate('button.backBtn', 'click', function(e){
-        e.preventDefault();
-        history.back(1);
-    });
+	$body.delegate('button.backBtn', 'click', function(e){
+		e.preventDefault();
+		history.back(1);
+	});
 
-    //info dialog
+	//info dialog
+	/*$body.delegate('.img .inner a.info', 'click touchend', function(e){*/
+	$body.on('click touchend', '.img .inner a.info', function(e){
+		e.preventDefault();
+		e.stopPropagation();
 
-    $('body').delegate('.img .inner a.info', 'click', function(e){
-        e.preventDefault();
+		var $this = $(this),
+			thisLi = $this.parents('li.example').attr('id'),
+			thisSelector = "#"+ thisLi + " .info-popup",
+			thisContentStr = $(thisSelector).html(),
+			$infoDiag = $('#infoDiag'),
+			screenSize;
 
-        var $this = $(this),
-            thisLi = $this.parents('li.example').attr('id'),
-            thisSelector = "#"+ thisLi + " .info-popup",
-            thisContentStr = $(thisSelector).html();
+		var getScreenSize = function() {
+			return window.innerWidth;
+		};
 
-        $('#infoDiag').html('');
+		var diagData = {
+			width: 1100
+		};
 
-        $('#infoDiag').html(thisContentStr);
+		screenSize = getScreenSize();
 
-        $('#infoDiag').dialog(
-            { bgiframe: true,
-                dialogClass: 'infoDialog',
-                resizable: false,
-                width: 700,
-                modal: true,
-                draggable: false,
+		if(screenSize < 1200 && screenSize > 992) {
+			diagData.width = 860
+		} else if (screenSize < 993 && screenSize > 768) {
+			diagData.width = 730
+		} else if (screenSize < 769 && screenSize > 480) {
+			diagData.width = 450
+		} else if (screenSize < 481) {
+			diagData.width = 310
+		} else {
+
+		}
+
+		$infoDiag.html('');
+
+		$infoDiag.html(thisContentStr);
+
+		$infoDiag.dialog(
+			{ bgiframe: true,
+				dialogClass: 'infoDialog',
+				resizable: false,
+				width: diagData.width,
+				modal: true,
+				draggable: false,
 				position: ['center',100]
 			}
-        );
+		);
 
-        return false;
-    });
+		return false;
+	});
 
-    //info dialog close
+	//info dialog close
 
-    $('body').delegate('div.ui-widget-content a.closeInfo', 'click', function(e){
-        e.preventDefault();
+	$body.delegate('div.ui-widget-content a.closeInfo', 'click', function(e){
+		e.preventDefault();
 
-        //console.log('info close button clicked');
-        $('#infoDiag').dialog( "close" );
+		//console.log('info close button clicked');
+		$('#infoDiag').dialog( "close" );
 
-        return false;
+		return false;
 
-    });
+	});
 
-    //pop-up slider
+	//pop-up slider
 
-    $('body').delegate('.img .inner a.inspect', 'click', function(e){
-        e.preventDefault();
+	$body.delegate('.img .inner a.inspect', 'click', function(e){
+		e.preventDefault();
 
-        var $this = $(this),
-            thisLi = $this.parents('li.example').attr('id'),
-            thisSelector = "#"+ thisLi + " .inspect-popup ul",
-            thisContentStr = $(thisSelector).html();
+		var $this = $(this),
+			thisLi = $this.parents('li.example').attr('id'),
+			thisSelector = "#"+ thisLi + " .inspect-popup ul",
+			thisContentStr = $(thisSelector).html(),
+			screenSize;
 
-        //console.log(thisContentStr);
+		var getScreenSize = function() {
+			return window.innerWidth;
+		};
 
-        $('#sliderDiag ul.slides').html('');
+		var diagData = {
+			width: 1100
+		};
 
-        $('#sliderDiag ul.slides').html(thisContentStr);
+		screenSize = getScreenSize();
+		//console.log(screenSize);
 
-        $('#sliderDiag').dialog(
-            { bgiframe: true,
-                dialogClass: 'sliderDialog',
-                position: "top",
-                resizable: false,
-                width: 800,
-                modal: true,
-                draggable: false
-            }
-        );
+		if(screenSize < 1200 && screenSize > 992) {
+			diagData.width = 860
+		} else if (screenSize < 993 && screenSize > 768) {
+			diagData.width = 730
+		} else if (screenSize < 769 && screenSize > 480) {
+			diagData.width = 450
+		} else if (screenSize < 481) {
+			diagData.width = 310
+		} else {
 
-        //TODO add conditional to turn off transitions on touch devices
+		}
 
-        $('.flexslider').flexslider({
-            animation: "slide",
-            useCSS: "false"
-        });
+		//console.log(thisContentStr);
+
+		$('#sliderDiag ul.slides').html('');
+
+		$('#sliderDiag ul.slides').html(thisContentStr);
+
+		$('#sliderDiag').dialog(
+			{ bgiframe: true,
+				dialogClass: 'sliderDialog',
+				position: "top",
+				resizable: false,
+				width: diagData.width,
+				modal: true,
+				draggable: false
+			}
+		);
+
+		//TODO add conditional to turn off transitions on touch devices
+
+		$('.flexslider').flexslider({
+			animation: "slide",
+			useCSS: "false"
+		});
 
 
-        return false;
-    });
+		return false;
+	});
 
-    //pop-up slider close
+	//pop-up slider close
 
-    $('body').delegate('#sliderDiag a.closeSlider', 'click', function(e){
-        e.preventDefault();
+	$body.delegate('#sliderDiag a.closeSlider', 'click', function(e){
+		e.preventDefault();
 
-        //console.log('slider close button clicked');
-        $('#sliderDiag').dialog( "close" );
+		//console.log('slider close button clicked');
+		$('#sliderDiag').dialog( "close" );
 
-        $('.flexslider').removeData("flexslider");
+		$('.flexslider').removeData("flexslider");
 
-        return false;
+		return false;
 
-    });
+	});
 
 });
 

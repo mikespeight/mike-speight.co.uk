@@ -1,0 +1,5 @@
+<Files "mail-config.php">
+    Require all denied
+    Order allow,deny
+    Deny from all
+</Files>

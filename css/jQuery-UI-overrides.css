@@ -1,0 +1,13 @@
+.ui-widget-content {
+    background: none;
+}
+
+.ui-widget-overlay {
+    background: none;
+    background-color: #000;
+}
+
+.ui-dialog,
+.ui-widget {
+    width: 350px;
+}

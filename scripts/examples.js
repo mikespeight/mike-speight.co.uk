@@ -16,7 +16,126 @@ var port = Portfolio;
 port.data = {};
 
 var getexampledata = function() {
-	port.data.examples = [{
+	port.data.examples = [
+		{
+			"name":"mtivity",
+			"images":[
+				"mtivity-screen-1.jpg",
+				"mtivity-screen-2.jpg",
+				"mtivity-screen-3.jpg",
+				"mtivity-screen-4.jpg",
+				"mtivity-screen-5.jpg",
+				"mtivity-screen-6.jpg",
+				"mtivity-screen-7.jpg"
+			],
+			"info":{
+				"date":"Released: July 2018 – December 2019",
+				"name":"Mitivity",
+				"url":"https://www.mtivity.com/",
+				"description":"Senior User Interface/User Experience Developer and UX Designer/Architect, for this internationally based company.",
+				"working for":"Mtivity",
+				"front end technologies used":"HTML5, CSS/CSS3, Responsive Design/Media Queries, jQuery, Angular, SASS, Gulp, FontAwesome 5, Bower, Bootstrap 4.",
+				"back end technologies used":"ruby, asp.net, java(jsp), intersystems cache ",
+				"CMS":"NA",
+				"additional information":"To work remotely with their Marketing Acceleration Platform, to augment and generally improve the existing UI and to develop the UI/UX for new modules to be included in the platform. These include a module to add the facility for the user to visually see the details in their accounts via a dashboard that allows the inclusion of many types of charts, also modules for Guided Buying, Supplier Relationship Management etc. ",
+				"free text":""
+			}
+		},
+		{
+			"name":"boc",
+			"images":[
+				"boc-screen-1.jpg",
+				"boc-screen-2.jpg",
+				"boc-screen-3.jpg",
+				"boc-screen-4.jpg",
+				"boc-screen-5.jpg",
+				"boc-screen-6.jpg",
+				"boc-screen-7.jpg"
+			],
+			"info":{
+				"date":"Released: October 2018 – January 2019",
+				"name":"London Borough of Culture",
+				"url":"https://wfculture19.co.uk/",
+				"description":"Senior Front End/UI and UX Architect, for this large local authority.",
+				"working for":"London Borough of Waltham Forest",
+				"front end technologies used":"HTML5, CSS/CSS3, Responsive Design/Media Queries, jQuery, Angular, LESS, Gulp, FontAwesome, Bower, Bootstrap3.",
+				"back end technologies used":"PHP",
+				"CMS":"Drupal 8",
+				"additional information":"A one page campaign website to showcase Waltham Forest Council’s bid to become London’s first Borough of Culture and encourage people to pledge their support. After Waltham Forest was successfully named Borough of Culture 2019, the website was updated to showcase our work towards organising London Borough of Culture 2019. launch website to promote the London Borough of Waltham Forest being the first Borough of Culture.",
+				"free text":""
+			}
+		},
+		{
+			"name":"weddings",
+			"images":[
+				"weddings-screen-1.jpg",
+				"weddings-screen-2.jpg",
+				"weddings-screen-3.jpg",
+				"weddings-screen-4.jpg",
+				"weddings-screen-5.jpg",
+				"weddings-screen-6.jpg",
+				"weddings-screen-7.jpg"
+			],
+			"info":{
+				"date":"Completed June 2018 not released yet",
+				"name":"Marry Me London",
+				"url":"",
+				"description":"Senior Front End/UI and UX Architect, for this large local authority.",
+				"working for":"London Borough of Waltham Forest",
+				"front end technologies used":"HTML5, CSS/CSS3, Responsive Design/Media Queries, jQuery, Angular, LESS, Gulp, FontAwesome, Bower, Bootstrap3.",
+				"back end technologies used":"PHP",
+				"CMS":"Drupal 8",
+				"additional information":"The Marry Me website uses beautiful photography and content to promote the marriage and civil partnership services Waltham Forest Council offers and its venues.",
+				"free text":""
+			}
+		},
+		{
+			"name":"elp",
+			"images":[
+				"elp-screen-1.jpg",
+				"elp-screen-2.jpg",
+				"elp-screen-3.jpg",
+				"elp-screen-4.jpg",
+				"elp-screen-5.jpg",
+				"elp-screen-6.jpg"
+			],
+			"info":{
+				"date":"Released August 2018",
+				"name":"Eastern Legal Partnership",
+				"url":"https://www.easternlegalpartnership.co.uk/",
+				"description":"Senior Front End/UI and UX Architect, for this large local authority.",
+				"working for":"London Borough of Waltham Forest",
+				"front end technologies used":"HTML5, CSS/CSS3, Responsive Design/Media Queries, jQuery, Angular, LESS, Gulp, FontAwesome, Bower, Bootstrap3.",
+				"back end technologies used":"PHP",
+				"CMS":"Drupal 8",
+				"additional information":"A corporate website to market and promote Waltham Forest Council’s legal services to other public bodies, in order to bring in a new income to the council.",
+				"free text":""
+			}
+		},
+		{
+			"name":"wetlands",
+			"images":[
+				"wetlands-screen-1.jpg",
+				"wetlands-screen-2.jpg",
+				"wetlands-screen-3.jpg",
+				"wetlands-screen-4.jpg",
+				"wetlands-screen-5.jpg",
+				"wetlands-screen-6.jpg"
+			],
+			"info":{
+				"date":"Released October 2017",
+				"name":"Walthamstow Wetlands",
+				"url":"https://walthamstowwetlands.com/",
+				"description":"Senior Front End/UI and UX Architect, for this large local authority.",
+				"working for":"London Borough of Waltham Forest",
+				"front end technologies used":"HTML5, CSS/CSS3, Responsive Design/Media Queries, jQuery, Angular, LESS, Gulp, FontAwesome, Bower, Bootstrap3.",
+				"back end technologies used":"PHP",
+				"CMS":"Drupal 8",
+				"additional information":"I was engaged to be the senior Front-End, UX/UI Developer to a small team, who were tasked with creating a number of websites for the Local Authorities departments, who were commercialising their services to the general public. Including this brand new website to promote the newly opened Walthamstow Wetlands to the public and share activities, events and updates about the venue. Working the vast majority of the time remotely, this was one of approx. 15 websites produced in just over 2 years.",
+				"free text":""
+			}
+		},
+		{
 				"name":"lbc",
 				"images":[
 					"lbc-screen-1.jpg",
@@ -139,7 +258,7 @@ var getexampledata = function() {
 				"info":{
 						"date":"Mar 2014 – Sept 2014",
 						"name":"Hotels4u.com",
-						"url":"Http://www.hotels4u.com",
+						"url":"",
 						"description":"Senior User Interface Developer for this On-line hotel booking site owned by the Thomas Cook Group.",
 						"working for":"Hotels4u",
 						"front end technologies used":"HTML5, CSS/CSS3, Object Orientated JavaScript, , jQuery, Modernizer, AJAX, LESS, Angular, Twitter Bootstrap 3, Responsive design, Media Queries.",
@@ -212,11 +331,11 @@ var getexampledata = function() {
 		{
 				"name":"rafclub",
 				"images":[
-						"rafclub-screen-1.jpg",
-						"rafclub-screen-2.jpg",
-						"rafclub-screen-3.jpg",
-						"rafclub-screen-4.jpg",
-						"rafclub-screen-5.jpg"
+					"rafclub-screen-1.jpg",
+					"rafclub-screen-2.jpg",
+					"rafclub-screen-3.jpg",
+					"rafclub-screen-4.jpg",
+					"rafclub-screen-5.jpg"
 				],
 				"info":{
 						"date":"Oct 2012 – Jan 2013",

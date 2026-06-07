@@ -1,0 +1,203 @@
+/* ==========================================
+   2026 Site Refresh
+========================================== */
+
+/***********************************************************
+
+Up Date css this file overrides the existing Sass and css by
+being loaded last tis is so we cand make changes to the site
+after migration without having to rebuild the complete
+frontend stack
+
+***********************************************************/
+
+body.update {
+  margin: 0;
+}
+
+body.update .portfolio-intro,
+body.update .main,
+body.update .page-wrap,
+body.update .content-wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
+  box-sizing: border-box;
+}
+
+body.update #contactContent h2,
+body.update #contactContent h3,
+body.update #aboutContent h2,
+body.update #aboutContent h3,
+body.update #technologies h2,
+body.update #technologies h3 {
+  font-weight: bold;
+  text-align: left;
+}
+
+body.update #contactContent h2,
+body.update #aboutContent h2,
+body.update #technologies h2 {
+  text-transform: uppercase;
+  font-family: OpenSans-Light;
+  color: #ffc42e;
+  font-size: 18px;
+  letter-spacing: 2px;
+  margin: 20px 0;
+}
+
+
+body.update #contactContent h3,
+body.update #aboutContent h3,
+body.update #technologies h3 {
+  font-size: 16px;
+  margin: 20px 0 10px;
+}
+
+body.update .portfolio-intro h1,
+body.update #contactContent h1,
+body.update #aboutContent h1,
+body.update #technologies h1  {
+  text-transform: uppercase;
+  font-family: OpenSans-Light;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin: 20px 0;
+  color: #ffc42e;
+}
+
+body.update #technologies h1 {
+  text-align: left;
+}
+
+body.update #contactContent p {
+  text-transform: none;
+}
+
+body.update #contactContent label {
+  font-size: 0.5rem;
+}
+
+.update #portfolio p,
+.update #contactContent p,
+.update #aboutContent p,
+.update #technologies p {
+  margin: 20px 0;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.update #aboutContent h3,
+.update #technologies h3 {
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.update #aboutContent h3+p,
+.update #technologies h3+p {
+  margin: 10px 0 20px;
+}
+
+.update #technology-panel ul li.html {
+  background: url("../assets/images/agile-icon-bkg.png") 50% 50% no-repeat;
+}
+
+.update #technology-panel ul li.css {
+  background: url("../assets/images/digital-strategy-bkg.png") 50% 50% no-repeat;
+}
+
+.update #technology-panel ul li.js {
+  background: url("../assets/images/ux-ui-bkg.png") 50% 50% no-repeat;
+}
+
+/* =========================================
+   Portfolio Info Popup Styling
+   ========================================= */
+
+.ui-dialog.infoDialog {
+  width: 900px !important;
+  max-width: 90vw;
+  box-sizing: border-box;
+}
+
+.ui-dialog.infoDialog .ui-dialog-content {
+  padding: 20px !important;
+  overflow: visible;
+  box-sizing: border-box;
+  background: #111;
+}
+
+#infoDiag {
+  width: auto !important;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+#infoDiag .wrapper {
+  display: block;
+  width: auto !important;
+  min-width: 0;
+  box-sizing: border-box;
+  margin-top: 30px;
+  border: 1px solid #ffc428;
+  padding: 20px;
+}
+
+/* Main project heading */
+
+#infoDiag .wrapper h3 {
+  color: #ffc428;
+  font-size: 2em;
+  line-height: 1.2;
+  margin: 0 0 20px 0;
+  padding-bottom: 10px;
+
+  border-bottom: 1px solid rgba(255, 196, 40, 0.3);
+}
+
+/* Section headings */
+
+#infoDiag .wrapper h4 {
+  color: #ffc428;
+  font-size: 1.2em;
+  line-height: 1.4;
+
+  margin: 25px 0 10px 0;
+}
+
+/* Paragraphs */
+
+#infoDiag .wrapper p {
+  line-height: 1.7;
+  margin: 0 0 15px 0;
+  color: #ddd;
+}
+
+/* Role line */
+
+#infoDiag .wrapper .project-role {
+  font-weight: bold;
+  font-size: 1.05em;
+  color: #fff;
+
+  margin-bottom: 25px;
+}
+
+/* Close button */
+
+#infoDiag .closeInfo {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+
+  color: #ffc428;
+  font-size: 1.5em;
+  text-decoration: none;
+  z-index: 999;
+}
+
+#infoDiag .closeInfo:hover {
+  opacity: 0.8;
+}
