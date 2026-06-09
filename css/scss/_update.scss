@@ -15,6 +15,10 @@ body.update {
   margin: 0;
 }
 
+body.update .main {
+  max-width: 1100px;
+}
+
 body.update .portfolio-intro,
 body.update .main,
 body.update .page-wrap,
@@ -26,21 +30,17 @@ body.update .content-wrap {
   box-sizing: border-box;
 }
 
-body.update #contactContent h2,
-body.update #contactContent h3,
-body.update #aboutContent h2,
-body.update #aboutContent h3,
-body.update #technologies h2,
-body.update #technologies h3,
-body.update #ProjectContent h2,
-body.update #ProjectContent h3{
+body.update #contactContact {
+  max-width: 1100px;
+}
+
+body.update .main h2,
+body.update .main h3{
   font-weight: bold;
   text-align: left;
 }
 
-body.update #contactContent h2,
-body.update #aboutContent h2,
-body.update #technologies h2 {
+body.update .main h2{
   text-transform: uppercase;
   font-family: OpenSans-Light;
   color: #ffc42e;
