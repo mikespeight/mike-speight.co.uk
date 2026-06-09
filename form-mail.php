@@ -91,6 +91,9 @@
             
 
             <?php
+            ini_set('display_errors', 1);
+            ini_set('display_startup_errors', 1);
+            error_reporting(E_ALL);
 
            use PHPMailer\PHPMailer\PHPMailer;
            use PHPMailer\PHPMailer\Exception;
@@ -99,7 +102,12 @@
            require 'scripts/PHPMailer/src/PHPMailer.php';
            require 'scripts/PHPMailer/src/SMTP.php';
 
-           $config = require __DIR__ . '/private/mail-config.php';
+           /* echo "form-mail.php loaded<br>";
+           echo "PHPMailer files loaded<br>"; */
+
+           $config = require __DIR__ . '/Private/mail-config.php';
+
+           /* echo "mail-config.php loaded<br>"; */
 
             if(isset($_POST['email'])) {
                  
@@ -206,7 +214,9 @@
 
             <?php 
               if ($reason == "downloadCV") {
-                  echo "<p>Thank you for your enquiry. I will respond with the latest version of my CV.</p>";
+                  echo "<h3>Thank you. Your CV download is ready.</h3>";
+                  echo "<p>You can download my latest CV using the link below.</p>";
+                  echo "<p><a class='button' href='documents/mike-speight-cv.pdf' target='_blank'>Download Mike Speight CV</a></p>";
               } elseif ($reason == "consultancy") {
                   echo "<p>Thank you for your consultancy enquiry. I will review your message and respond as soon as possible.</p>";
               } elseif ($reason == "agile") {

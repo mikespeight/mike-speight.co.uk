@@ -31,7 +31,9 @@ body.update #contactContent h3,
 body.update #aboutContent h2,
 body.update #aboutContent h3,
 body.update #technologies h2,
-body.update #technologies h3 {
+body.update #technologies h3,
+body.update #ProjectContent h2,
+body.update #ProjectContent h3{
   font-weight: bold;
   text-align: left;
 }
@@ -50,7 +52,8 @@ body.update #technologies h2 {
 
 body.update #contactContent h3,
 body.update #aboutContent h3,
-body.update #technologies h3 {
+body.update #technologies h3,
+body.update #ProjectContent h3{
   font-size: 16px;
   margin: 20px 0 10px;
 }
@@ -58,7 +61,8 @@ body.update #technologies h3 {
 body.update .portfolio-intro h1,
 body.update #contactContent h1,
 body.update #aboutContent h1,
-body.update #technologies h1  {
+body.update #technologies h1,
+body.update #ProjectContent h1 {
   text-transform: uppercase;
   font-family: OpenSans-Light;
   font-size: 24px;
@@ -83,7 +87,8 @@ body.update #contactContent label {
 .update #portfolio p,
 .update #contactContent p,
 .update #aboutContent p,
-.update #technologies p {
+.update #technologies p,
+.update #ProjectContent p {
   margin: 20px 0;
   font-size: 1rem;
   text-align: left;
