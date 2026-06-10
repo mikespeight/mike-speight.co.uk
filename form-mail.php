@@ -114,7 +114,7 @@
                  
                $email_to = "info@mike-speight.co.uk";
                  
-                $email_subject = "On-line contact form submission from mike-speight.co.uk";
+                $email_subject = "Website Enquiry - mike-speight.co.uk";
                  
                  
                 function died($error) {
@@ -135,10 +135,17 @@
                 $first_name = $_POST['first-name']; // required
                 $last_name = $_POST['last-name']; // required
                 $company = $_POST['company']; // not required
-                $telephone = $_POST['telephone']; // not required
+                $telephone = $_POST['telephone'] ?? ''; // not required
                 $email_from = $_POST['email']; // required
                 $reason = $_POST['reason']; // required
-                $comments = $_POST['free-text']; // not required
+
+                if ($reason == "downloadCV") {
+                    $email_subject = "CV Download Request - " . $first_name . " " . $last_name;
+                } else {
+                    $email_subject = "Website Enquiry - " . $first_name . " " . $last_name;
+                }
+
+                $comments = $_POST['free-text'] ?? ''; // not required
                  
                 $error_message = "";
 

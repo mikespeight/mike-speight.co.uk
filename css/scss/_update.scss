@@ -55,9 +55,8 @@ body.update .main,
 body.update .page-wrap,
 body.update .content-wrap {
   max-width: 1100px;
-  margin: 0 auto;
-  padding-left: 24px;
-  padding-right: 24px;
+  margin: 75px auto 0;
+  padding: 40px 24px;
   box-sizing: border-box;
 }
 
@@ -142,6 +141,36 @@ body.update #contactContent p {
 
 .update #technology-panel ul li.js {
   background: url("../assets/images/ux-ui-bkg.png") 50% 50% no-repeat;
+}
+
+/* =========================================
+   CV Download Form Styling
+   ========================================= */
+#downloadForm {
+  text-align: left;
+}
+
+#downloadForm {
+  padding: 0 20px;
+  .form-row {
+    margin: 20px 0;
+    clear: left;
+    width: 100%;
+    label {
+      display: none;
+      padding: 3px 0;
+    }
+    input {
+      padding: 5px;
+      font-family: OpenSans-Light;
+      font-size: $body-text;
+      @include border-radius (5px);
+      @include box-shadow (3px, 0.5);
+      width:75%;
+      border: 1px solid $lt-gray;
+    }
+  }
+
 }
 
 /* =========================================
