@@ -244,8 +244,8 @@
             <!--<p>Thank you for contacting us. We will be in touch with you very soon.</p>-->
             <ul>
               <li class="button-row">
-                <a id="backBtn" class="backBtn" href="contact.html">
-                  <i class="icon icon-backward"></i>Back
+                <a id="backBtn" class="backBtn" href="index.html">
+                    <i class="icon icon-home"></i>Home
                 </a>
               </li>
             </ul>

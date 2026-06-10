@@ -1729,6 +1729,29 @@ body.update #contactContent p {
   background: url("../assets/images/ux-ui-bkg.png") 50% 50% no-repeat;
 }
 
+body.update .cta-row {
+  margin: 30px 0;
+}
+
+body.update .cv-download-btn {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 5px;
+  background: #ffc42f;
+  color: #333;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+body.update a.cv-download-btn {
+  color: white !important;
+}
+
+body.update .cv-download-btn:hover {
+  background: #ffd956;
+  text-decoration: none;
+}
+
 /* =========================================
    CV Download Form Styling
    ========================================= */
