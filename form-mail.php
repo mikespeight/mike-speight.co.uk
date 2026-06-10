@@ -13,7 +13,7 @@
     <!-- Google webmaster tools meta tag DO NOT REMOVE -->
     <meta name="google-site-verification" content="DFziy1QnQYQdvfn4rC4yOmOuS1_naBC15bHg29oLLJ8" />
 
-    <link href="css/mike-speight.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
     <link href="css/animate.css" rel="stylesheet" />
     <link href="css/flexslider.css" rel="stylesheet" />
     <link href="css/jquery.sidr.light.css" rel="stylesheet" />

@@ -1605,6 +1605,38 @@ body.update .main {
   max-width: 1100px;
 }
 
+body.update #container {
+  width: 100%;
+}
+
+body.update #contactContent {
+  max-width: 1100px;
+  margin: 75px auto 0;
+  padding: 40px 24px;
+  box-sizing: border-box;
+}
+
+body.update #contactContent h3 {
+  font-size: 24px;
+  line-height: 1.4;
+  padding: 0;
+}
+
+body.update #contactContent p,
+body.update #contactContent li,
+body.update #contactContent a {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+body.update #contactContent p {
+  padding: 0;
+}
+
+body.update #contactContent label {
+  font-size: 1rem;
+}
+
 body.update .portfolio-intro,
 body.update .main,
 body.update .page-wrap,
@@ -1614,10 +1646,6 @@ body.update .content-wrap {
   padding-left: 24px;
   padding-right: 24px;
   box-sizing: border-box;
-}
-
-body.update #contactContact {
-  max-width: 1100px;
 }
 
 body.update .main h2,
@@ -1635,11 +1663,15 @@ body.update .main h2 {
   margin: 20px 0;
 }
 
-body.update #contactContent h3,
 body.update #aboutContent h3,
 body.update #technologies h3,
 body.update #ProjectContent h3 {
   font-size: 16px;
+  margin: 20px 0 10px;
+}
+
+body.update #contactContent h3 {
+  font-size: 24px;
   margin: 20px 0 10px;
 }
 
@@ -1663,10 +1695,6 @@ body.update #technologies h1 {
 
 body.update #contactContent p {
   text-transform: none;
-}
-
-body.update #contactContent label {
-  font-size: 0.5rem;
 }
 
 .update #portfolio p,
