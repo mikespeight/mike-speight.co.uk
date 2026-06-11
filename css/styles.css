@@ -329,6 +329,10 @@ i.icon-social {
   content: "\f00d";
 }
 
+.icon-instagram:before {
+  content: "\f16d";
+}
+
 h2 {
   font-family: OpenSans-Light;
   font-size: 44px;
@@ -1609,11 +1613,16 @@ body.update #container {
   width: 100%;
 }
 
+body.update #projectContent,
 body.update #contactContent {
   max-width: 1100px;
   margin: 75px auto 0;
   padding: 40px 24px;
   box-sizing: border-box;
+}
+
+body.update #projectContent h3 {
+  color: #ffc42e;
 }
 
 body.update #contactContent h3 {
@@ -1622,6 +1631,8 @@ body.update #contactContent h3 {
   padding: 0;
 }
 
+body.update #projectContent, p,
+body.update #projectContent, li,
 body.update #contactContent p,
 body.update #contactContent li,
 body.update #contactContent a {
@@ -1629,6 +1640,7 @@ body.update #contactContent a {
   line-height: 1.6;
 }
 
+body.update #projectContent, p,
 body.update #contactContent p {
   padding: 0;
 }
@@ -1674,6 +1686,7 @@ body.update #contactContent h3 {
   margin: 20px 0 10px;
 }
 
+body.update #projectContent h1,
 body.update .portfolio-intro h1,
 body.update #contactContent h1,
 body.update #aboutContent h1,
@@ -1688,12 +1701,55 @@ body.update #ProjectContent h1 {
   color: #ffc42e;
 }
 
+body.update #projectContent h1,
 body.update #technologies h1 {
   text-align: left;
 }
 
 body.update #contactContent p {
   text-transform: none;
+}
+
+body.update #projectContent dl {
+  font-size: 1rem;
+  text-align: left;
+  display: block;
+}
+body.update #projectContent dl dt {
+  float: left;
+  width: 20%;
+}
+body.update #projectContent dl dd {
+  float: left;
+  width: 75%;
+}
+
+body.update #projectContent ul {
+  text-align: left;
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+body.update #projectContent dl::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+body.update #projectContent dl dt::after {
+  content: ":";
+}
+
+.update #projectContent p {
+  margin: 10px 0;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.update #projectContent p.breadcrumb {
+  margin-top: -40px;
+  font-size: 0.75rem;
+  text-align: left;
 }
 
 .update #portfolio p,
@@ -1706,10 +1762,22 @@ body.update #contactContent p {
   text-align: left;
 }
 
+.update #projectContent h3,
 .update #aboutContent h3,
 .update #technologies h3 {
   margin-bottom: 10px;
   text-align: left;
+}
+
+.update #projectContent h4 {
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: left;
+  margin: 10px 0;
+}
+
+.update #projectContent h3 + p {
+  margin: 10px 0;
 }
 
 .update #aboutContent h3 + p,
@@ -1718,15 +1786,15 @@ body.update #contactContent p {
 }
 
 .update #technology-panel ul li.html {
-  background: url("../assets/images/agile-icon-bkg.png") 50% 50% no-repeat;
+  background: url("../../assets/images/agile-icon-bkg.png") 50% 50% no-repeat;
 }
 
 .update #technology-panel ul li.css {
-  background: url("../assets/images/digital-strategy-bkg.png") 50% 50% no-repeat;
+  background: url("../../assets/images/digital-strategy-bkg.png") 50% 50% no-repeat;
 }
 
 .update #technology-panel ul li.js {
-  background: url("../assets/images/ux-ui-bkg.png") 50% 50% no-repeat;
+  background: url("../../assets/images/ux-ui-bkg.png") 50% 50% no-repeat;
 }
 
 body.update .cta-row {
