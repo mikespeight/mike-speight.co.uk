@@ -21,12 +21,16 @@
     <meta name="description"
           content="Project case study for Project Name.">
 
-    <link rel="icon"
-          href="../assets/images/favicon.ico">
+    <link rel="icon" href="../assets/images/favicon.ico">
 
     <link href="../css/styles.css" rel="stylesheet">
     <link href="../css/animate.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+
+    <link href="../css/flexslider.css" rel="stylesheet">
+
+    <script src="../scripts/jquery-1.10.2.js"></script>
+    <script src="../scripts/jquery.flexslider.js"></script>
 
 
 </head>
@@ -80,9 +84,32 @@
 
             <div class="project-intro">
                 <p>Mtivity is a Marketing Acceleration Platform designed to help organisations manage marketing workflows, supplier relationships, procurement processes and campaign delivery activities through a single integrated platform.</p>
-                <p>I worked remotely with Mtivity as part of a small distributed team responsible for enhancing the platform and supporting the delivery of new functionality. The assignment focused on improving the overall user experience of an established product while helping shape the user interface for a number of new modules and features.</p>
-                <p>The platform contained a wide range of workflow-driven functionality, requiring careful consideration of usability, navigation and information architecture. My role combined UX/UI architecture, front-end implementation and close collaboration with product, technical and business stakeholders to ensure that new features were both practical and easy to use.</p>
             </div>
+
+            <script>
+				$(window).load(function () {
+					$('.project-slider').flexslider({
+						animation: "slide",
+						slideshow: false,
+						controlNav: true,
+						directionNav: true
+					});
+				});
+            </script>
+
+            <section class="project-gallery image-carousel">
+                <div class="flexslider project-slider">
+                    <ul class="slides">
+                        <li><img src="../assets/images/mtivity-screen-1.jpg" alt="Mtivity platform screen 1"></li>
+                        <li><img src="../assets/images/mtivity-screen-2.jpg" alt="Mtivity platform screen 2"></li>
+                        <li><img src="../assets/images/mtivity-screen-3.jpg" alt="Mtivity platform screen 3"></li>
+                        <li><img src="../assets/images/mtivity-screen-4.jpg" alt="Mtivity platform screen 4"></li>
+                        <li><img src="../assets/images/mtivity-screen-5.jpg" alt="Mtivity platform screen 5"></li>
+                        <li><img src="../assets/images/mtivity-screen-6.jpg" alt="Mtivity platform screen 6"></li>
+                        <li><img src="../assets/images/mtivity-screen-7.jpg" alt="Mtivity platform screen 7"></li>
+                    </ul>
+                </div>
+            </section>
 
             <section class="project-details">
                 <h3>Project Details</h3>

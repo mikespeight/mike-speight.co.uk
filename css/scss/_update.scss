@@ -111,6 +111,28 @@ body.update #ProjectContent h1 {
   color: #ffc42e;
 }
 
+/*#portfolio-panel ul li a.text {
+  display: block;
+  height: 70px;
+  background-color: #ffffff;
+  font-family: OpenSans-Light;
+  color: #333;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-top: 40px;
+}*/
+
+body.update #portfolio-panel ul li a.img {
+  display: block;
+  cursor: pointer;
+  width: 100%;
+  height: 220px;
+}
+
+body.update #portfolio-panel ul li a.text {
+  cursor: pointer;
+}
+
 body.update #projectContent h1,
 body.update #technologies h1 {
   text-align: left;
@@ -119,6 +141,35 @@ body.update #technologies h1 {
 body.update #contactContent p {
   text-transform: none;
 }
+
+body.update #projectContent h1,
+body.update #projectContent h2,
+body.update #projectContent h3 {
+  font-weight: bold;
+}
+
+body.update #projectContent h4 {
+  font-weight: normal;
+}
+
+body.update #projectContent h3,
+body.update #projectContent h4{
+  color: #000000;
+}
+
+body.update #projectContent h2 {
+  font-size: 1.3rem;
+}
+
+body.update #projectContent h3 {
+  font-size: 1.2rem;
+}
+
+body.update #projectContent h4 {
+  font-size: 1.1rem;
+}
+
+
 
 body.update #projectContent dl {
   font-size: 1rem;
@@ -146,8 +197,33 @@ body.update #projectContent dl::after {
   clear: both;
 }
 
+body.update #projectContent .image-carousel ul {
+  list-style-type: none;
+}
+
 body.update #projectContent dl dt::after {
   content: ":";
+}
+
+body.update #projectContent .image-carousel a {
+  color: #ffc42e;
+  font-size: 30px;
+  font-weight: bold;
+  overflow: hidden;
+}
+
+body.update #projectContent .project-slider {
+
+  .flex-direction-nav a {
+    width: 64px;
+    height: 64px;
+    margin-top: -30px;
+  }
+
+  .flex-direction-nav a:before {
+    font-size: 48px;
+  }
+
 }
 
 .update #projectContent p {
