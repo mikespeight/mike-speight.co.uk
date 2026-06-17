@@ -2007,4 +2007,75 @@ body.update .cv-download-btn:hover {
   opacity: 0.8;
 }
 
+/*************************************************
+
+    =Fluid Mobile Device Styles Begin
+
+**************************************************/
+@media only screen and (max-width: 1024px) {
+  body.update li.mtivity .img {
+    background-image: url("../assets/images/mtivity-thumb.jpg");
+  }
+  body.update li.boc .img {
+    background-image: url("../assets/images/boc-thumb.jpg");
+  }
+  body.update li.weddings .img {
+    background-image: url("../assets/images/weddings-thumb.jpg");
+  }
+  body.update li.elp .img {
+    background-image: url("../assets/images/elp-thumb.jpg");
+  }
+  body.update li.wetlands .img {
+    background-image: url("../assets/images/wetlands-thumb.jpg");
+  }
+  body.update li.ford .img {
+    background-image: url("../assets/images/ford-thumb.jpg");
+  }
+  body.update li.telegraph .img {
+    background-image: url("../assets/images/telegraph-thumb.jpg");
+  }
+  body.update li.lbc .img {
+    background-image: url("../assets/images/lbc-thumb.jpg");
+  }
+  body.update li.bidonthis .img {
+    background-image: url("../assets/images/bidonthis-thumb.jpg");
+  }
+  body.update li.market .img {
+    background-image: url("../assets/images/market-thumb.jpg");
+  }
+  body.update li.Hotels4u .img {
+    background-image: url("../assets/images/Hotels4u-thumb.jpg");
+  }
+  body.update li.pearson .img {
+    background-image: url("../assets/images/pearson-thumb.jpg");
+  }
+  body.update li.loreal .img {
+    background-image: url("../assets/images/loreal-thumb.jpg");
+  }
+  body.update li.sportlabs .img {
+    background-image: url("../assets/images/sportlabs-thumb.jpg");
+  }
+  body.update li.rafclub .img {
+    background-image: url("../assets/images/raf-club-thumb.jpg");
+  }
+  body.update li.thorntons .img {
+    background-image: url("../assets/images/thorntons-thumb.jpg");
+  }
+  body.update li.tesco .img {
+    background-image: url("../assets/images/tesco-thumb.jpg");
+  }
+  body.update li.hhGlobal .img {
+    background-image: url("../assets/images/hhglobal-thumb.jpg");
+  }
+  body.update li.asos .img {
+    background-image: url("../assets/images/asos-thumb.jpg");
+  }
+  body.update li.mwmw .img {
+    background-image: url("../assets/images/mwmw-thumb.jpg");
+  }
+  body.update li.macmillan .img {
+    background-image: url("../assets/images/macmillan-thumb.jpg");
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
