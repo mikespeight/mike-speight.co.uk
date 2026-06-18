@@ -1796,6 +1796,17 @@ body.update #projectContent dl dt::after {
   content: ":";
 }
 
+body.update #projectContent .project-hero {
+  margin: 2rem 0;
+}
+
+body.update #projectContent .project-hero img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
 body.update #projectContent .image-carousel a {
   color: #ffc42e;
   font-size: 30px;
