@@ -1076,6 +1076,14 @@ li:hover.macmillan .img {
   background: transparent url("../assets/images/macmillan-thumb.jpg") 0 0 no-repeat;
 }
 
+li.Conchango .img {
+  background: transparent url("../assets/images/conchango-bw-thumb.png") 0 0 no-repeat;
+}
+
+li:hover.Conchango .img {
+  background: transparent url("../assets/images/conchango-thumb.png") 0 0 no-repeat;
+}
+
 /* About page styles */
 #aboutContent {
   text-align: left;
