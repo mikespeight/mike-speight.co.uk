@@ -89,8 +89,8 @@
     background-image: url("../assets/images/mwmw-thumb.jpg");
   }
 
-  body.update li.macmillan .img {
-    background-image: url("../assets/images/macmillan-thumb.jpg");
+  body.update li.Conchango .img {
+    background-image: url("../assets/images/conchango-thumb.png");
   }
 }
 
@@ -184,7 +184,7 @@ body.update #projectContent dd {
   margin: 0 0 10px;
 }
 
-@media only screen and (max-width: 768px) {
+/*@media only screen and (max-width: 768px) {
 
   body.update #projectContent {
     width: auto;
@@ -260,7 +260,27 @@ body.update #projectContent dd {
     height: auto;
     box-sizing: border-box;
   }
-}
+
+  body.update #projectContent .flexslider,
+  body.update #projectContent .flex-viewport,
+  body.update #projectContent .slides,
+  body.update #projectContent .slides li {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  body.update #projectContent .slides img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  body.update #projectContent .flex-viewport {
+    overflow: hidden;
+  }
+}*/
 
 
 
