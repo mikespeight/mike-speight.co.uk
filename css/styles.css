@@ -1643,8 +1643,6 @@ body.update #contactContent h3 {
   padding: 0;
 }
 
-body.update #projectContent, p,
-body.update #projectContent, li,
 body.update #contactContent p,
 body.update #contactContent li,
 body.update #contactContent a {
@@ -1652,7 +1650,6 @@ body.update #contactContent a {
   line-height: 1.6;
 }
 
-body.update #projectContent, p,
 body.update #contactContent p {
   padding: 0;
 }
@@ -2094,6 +2091,160 @@ body.update .cv-download-btn:hover {
   }
   body.update li.macmillan .img {
     background-image: url("../assets/images/macmillan-thumb.jpg");
+  }
+}
+/* =========================================
+   Project Page Baseline Styling
+   ========================================= */
+body.update #projectContent {
+  max-width: 1100px;
+  margin: 75px auto 0;
+  padding: 40px 24px;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+body.update #projectContent h1 {
+  font-family: OpenSans-Light, Arial, sans-serif;
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #ffc42e;
+  margin: 20px 0;
+}
+
+body.update #projectContent h2 {
+  font-family: OpenSans-Light, Arial, sans-serif;
+  font-size: 1.35rem;
+  line-height: 1.35;
+  font-weight: bold;
+  color: #333;
+  margin: 0 0 24px;
+}
+
+body.update #projectContent h3 {
+  font-size: 1.25rem;
+  line-height: 1.4;
+  font-weight: bold;
+  color: #333;
+  margin: 32px 0 12px;
+}
+
+body.update #projectContent h4 {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: bold;
+  color: #333;
+  margin: 20px 0 10px;
+}
+
+body.update #projectContent p,
+body.update #projectContent li,
+body.update #projectContent dt,
+body.update #projectContent dd {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+body.update #projectContent p {
+  margin: 0 0 18px;
+}
+
+body.update #projectContent img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body.update #projectContent .project-gallery,
+body.update #projectContent .project-hero,
+body.update #projectContent .image-carousel {
+  margin: 28px 0;
+}
+
+body.update #projectContent dl {
+  overflow: hidden;
+  margin: 16px 0 24px;
+}
+
+body.update #projectContent dt {
+  float: left;
+  width: 24%;
+  font-weight: bold;
+  clear: left;
+}
+
+body.update #projectContent dd {
+  float: left;
+  width: 72%;
+  margin: 0 0 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  body.update #projectContent {
+    width: auto;
+    max-width: 100%;
+    padding: 28px 18px;
+    box-sizing: border-box;
+  }
+  body.update #page-wrapper {
+    width: 100%;
+    max-width: 100%;
+  }
+  body.update #projectContent {
+    margin-top: 40px;
+    padding: 28px 18px;
+  }
+  body.update #projectContent h1 {
+    font-size: 1.6rem;
+    line-height: 1.25;
+  }
+  body.update #projectContent h2 {
+    font-size: 1.15rem;
+    color: #ffc42e;
+  }
+  body.update #projectContent h3 {
+    font-size: 1.1rem;
+  }
+  body.update #projectContent dl dt,
+  body.update #projectContent dl dd {
+    float: none;
+    width: 100%;
+  }
+  body.update #projectContent dl dt {
+    margin-top: 14px;
+  }
+  body.update #projectContent dl dd {
+    margin-bottom: 8px;
+  }
+  body.update #projectContent .flexslider,
+  body.update #projectContent .project-slider,
+  body.update #projectContent .slides,
+  body.update #projectContent .slides li {
+    max-width: 100%;
+  }
+  body.update #projectContent .project-hero,
+  body.update #projectContent .project-gallery,
+  body.update #projectContent .image-carousel,
+  body.update #projectContent .flexslider,
+  body.update #projectContent .project-slider {
+    width: 100%;
+    max-width: 100%;
+    margin: 24px 0;
+    box-sizing: border-box;
+  }
+  body.update #projectContent img,
+  body.update #projectContent .project-hero img,
+  body.update #projectContent .project-gallery img,
+  body.update #projectContent .image-carousel img,
+  body.update #projectContent .flexslider img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
   }
 }
 
