@@ -557,6 +557,12 @@ div.ui-widget-content {
 div#dialogs {
   display: none;
 }
+li.handm .img {
+  background: transparent url("../assets/images/HandM-bw-thumb.jpg") 0 0 no-repeat; }
+
+li:hover.handm .img {
+  background: transparent url("../assets/images/HandM-thumb.jpg") 0 0 no-repeat; }
+
 li.thales .img {
   background: transparent url("../assets/images/thales-bw-thumb.jpg") 0 0 no-repeat; }
 

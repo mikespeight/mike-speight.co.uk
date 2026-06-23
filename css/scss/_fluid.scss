@@ -9,6 +9,10 @@
 
 @media only screen and (max-width: 1024px) {
 
+  body.update li.handm .img {
+    background-image: url("../assets/images/HandM-thumb.jpg");
+  }
+
   body.update li.thales .img {
     background-image: url("../assets/images/thales-thumb.jpg");
   }

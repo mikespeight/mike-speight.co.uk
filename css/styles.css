@@ -908,6 +908,14 @@ div#dialogs {
   display: none;
 }
 
+li.handm .img {
+  background: transparent url("../assets/images/HandM-bw-thumb.jpg") 0 0 no-repeat;
+}
+
+li:hover.handm .img {
+  background: transparent url("../assets/images/HandM-thumb.jpg") 0 0 no-repeat;
+}
+
 li.thales .img {
   background: transparent url("../assets/images/thales-bw-thumb.jpg") 0 0 no-repeat;
 }
@@ -2045,6 +2053,9 @@ body.update .cv-download-btn:hover {
 
 **************************************************/
 @media only screen and (max-width: 1024px) {
+  body.update li.handm .img {
+    background-image: url("../assets/images/HandM-thumb.jpg");
+  }
   body.update li.thales .img {
     background-image: url("../assets/images/thales-thumb.jpg");
   }
