@@ -908,6 +908,14 @@ div#dialogs {
   display: none;
 }
 
+li.lbwf .img {
+  background: transparent url("../assets/images/lbwf-bw-thumb.jpg") 0 0 no-repeat;
+}
+
+li:hover.lbwf .img {
+  background: transparent url("../assets/images/lbwf-thumb.jpg") 0 0 no-repeat;
+}
+
 li.mtivity .img {
   background: transparent url("../assets/images/mtivity-bw-thumb.jpg") 0 0 no-repeat;
 }
@@ -2029,6 +2037,9 @@ body.update .cv-download-btn:hover {
 
 **************************************************/
 @media only screen and (max-width: 1024px) {
+  body.update li.lbwf .img {
+    background-image: url("../assets/images/lbwf-thumb.jpg");
+  }
   body.update li.mtivity .img {
     background-image: url("../assets/images/mtivity-thumb.jpg");
   }

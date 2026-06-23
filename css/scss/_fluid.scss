@@ -9,6 +9,10 @@
 
 @media only screen and (max-width: 1024px) {
 
+  body.update li.lbwf .img {
+    background-image: url("../assets/images/lbwf-thumb.jpg");
+  }
+
   body.update li.mtivity .img {
     background-image: url("../assets/images/mtivity-thumb.jpg");
   }
