@@ -557,6 +557,12 @@ div.ui-widget-content {
 div#dialogs {
   display: none;
 }
+li.thales .img {
+  background: transparent url("../assets/images/thales-bw-thumb.jpg") 0 0 no-repeat; }
+
+li:hover.thales .img {
+  background: transparent url("../assets/images/thales-thumb.jpg") 0 0 no-repeat; }
+
 li.lbwf .img {
   background: transparent url("../assets/images/lbwf-bw-thumb.jpg") 0 0 no-repeat; }
 
