@@ -2312,5 +2312,18 @@ body.update #projectContent dd {
     overflow: hidden;
   }
 }*/
+@media only screen and (max-width: 768px) {
+  body.update #projectContent dl dt,
+  body.update #projectContent dl dd {
+    float: none;
+    width: 100%;
+  }
+  body.update #projectContent dl dt {
+    margin-top: 14px;
+  }
+  body.update #projectContent dl dd {
+    margin-bottom: 8px;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
