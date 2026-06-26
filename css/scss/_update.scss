@@ -434,3 +434,34 @@ body.update .cv-download-btn:hover {
   opacity: 0.8;
 }
 
+body.update .project-back {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  z-index: 1000;
+}
+
+body.update .project-back a {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+
+  padding: 12px 20px;
+
+  background: #004b8d;
+  color: #fff;
+
+  border-radius: 30px;
+
+  text-decoration: none;
+  font-weight: 600;
+
+  box-shadow: 0 6px 18px rgba(0,0,0,.25);
+
+  transition: all .25s ease;
+}
+
+body.update .project-back a:hover {
+  background: #0066c0;
+  transform: translateY(-2px);
+}

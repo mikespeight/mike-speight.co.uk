@@ -2047,6 +2047,32 @@ body.update .cv-download-btn:hover {
   opacity: 0.8;
 }
 
+body.update .project-back {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  z-index: 1000;
+}
+
+body.update .project-back a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 12px 20px;
+  background: #004b8d;
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  transition: all 0.25s ease;
+}
+
+body.update .project-back a:hover {
+  background: #0066c0;
+  transform: translateY(-2px);
+}
+
 /*************************************************
 
     =Fluid Mobile Device Styles Begin
@@ -2215,103 +2241,6 @@ body.update #projectContent dd {
   margin: 0 0 10px;
 }
 
-/*@media only screen and (max-width: 768px) {
-
-  body.update #projectContent {
-    width: auto;
-    max-width: 100%;
-    padding: 28px 18px;
-    box-sizing: border-box;
-  }
-
-  body.update #page-wrapper {
-    width: 100%;
-    max-width: 100%;
-  }
-
-  body.update #projectContent {
-    margin-top: 40px;
-    padding: 28px 18px;
-  }
-
-  body.update #projectContent h1 {
-    font-size: 1.6rem;
-    line-height: 1.25;
-  }
-
-  body.update #projectContent h2 {
-    font-size: 1.15rem;
-    color: #ffc42e;
-  }
-
-  body.update #projectContent h3 {
-    font-size: 1.1rem;
-  }
-
-  body.update #projectContent dl dt,
-  body.update #projectContent dl dd {
-    float: none;
-    width: 100%;
-  }
-
-  body.update #projectContent dl dt {
-    margin-top: 14px;
-  }
-
-  body.update #projectContent dl dd {
-    margin-bottom: 8px;
-  }
-
-  body.update #projectContent .flexslider,
-  body.update #projectContent .project-slider,
-  body.update #projectContent .slides,
-  body.update #projectContent .slides li {
-    max-width: 100%;
-  }
-
-  body.update #projectContent .project-hero,
-  body.update #projectContent .project-gallery,
-  body.update #projectContent .image-carousel,
-  body.update #projectContent .flexslider,
-  body.update #projectContent .project-slider {
-    width: 100%;
-    max-width: 100%;
-    margin: 24px 0;
-    box-sizing: border-box;
-  }
-
-  body.update #projectContent img,
-  body.update #projectContent .project-hero img,
-  body.update #projectContent .project-gallery img,
-  body.update #projectContent .image-carousel img,
-  body.update #projectContent .flexslider img {
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    box-sizing: border-box;
-  }
-
-  body.update #projectContent .flexslider,
-  body.update #projectContent .flex-viewport,
-  body.update #projectContent .slides,
-  body.update #projectContent .slides li {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-  }
-
-  body.update #projectContent .slides img {
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-  }
-
-  body.update #projectContent .flex-viewport {
-    overflow: hidden;
-  }
-}*/
 @media only screen and (max-width: 768px) {
   body.update #projectContent dl dt,
   body.update #projectContent dl dd {
@@ -2323,6 +2252,18 @@ body.update #projectContent dd {
   }
   body.update #projectContent dl dd {
     margin-bottom: 8px;
+  }
+}
+@media (max-width: 768px) {
+  body.update .project-back {
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
+  }
+  body.update .project-back a {
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
 }
 
