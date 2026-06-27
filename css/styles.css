@@ -1898,15 +1898,15 @@ body.update #projectContent .project-slider .flex-direction-nav a:before {
 }
 
 .update #technology-panel ul li.html {
-  background: url("../../assets/images/agile-icon-bkg.png") 50% 50% no-repeat;
+  background: url("../assets/images/agile-icon-bkg.png") 50% 50% no-repeat;
 }
 
 .update #technology-panel ul li.css {
-  background: url("../../assets/images/digital-strategy-bkg.png") 50% 50% no-repeat;
+  background: url("../assets/images/digital-strategy-bkg.png") 50% 50% no-repeat;
 }
 
 .update #technology-panel ul li.js {
-  background: url("../../assets/images/ux-ui-bkg.png") 50% 50% no-repeat;
+  background: url("../assets/images/ux-ui-bkg.png") 50% 50% no-repeat;
 }
 
 body.update .cta-row {
@@ -2071,6 +2071,12 @@ body.update .project-back a {
 body.update .project-back a:hover {
   background: #0066c0;
   transform: translateY(-2px);
+}
+
+.hp-field {
+  position: absolute;
+  left: -9999px;
+  overflow: hidden;
 }
 
 /*************************************************

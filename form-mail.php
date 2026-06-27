@@ -111,6 +111,11 @@
            /* echo "mail-config.php loaded<br>"; */
 
             if(isset($_POST['email'])) {
+
+                if (!empty($_POST['enquiry_code'])) {
+                    http_response_code(204); // No Content
+                    exit;
+                }
                  
                $email_to = "info@mike-speight.co.uk";
                  

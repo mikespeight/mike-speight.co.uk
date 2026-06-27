@@ -197,3 +197,11 @@ body.update #contactContent label {
 #infoDiag .closeInfo:hover {
     opacity: 0.8;
 }
+
+.hp-field {
+    position: absolute;
+    left: -9999px;
+    overflow: hidden;
+}
+
+
