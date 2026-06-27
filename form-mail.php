@@ -112,8 +112,8 @@
 
             if(isset($_POST['email'])) {
 
-                if (!empty($_POST['enquiry_code'])) {
-                    http_response_code(204); // No Content
+                // Honeypot check
+                if (isset($_POST['enquiry_code']) && trim($_POST['enquiry_code']) !== '') {
                     exit;
                 }
                  
